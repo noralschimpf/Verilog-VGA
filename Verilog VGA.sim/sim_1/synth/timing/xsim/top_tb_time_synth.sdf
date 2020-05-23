@@ -1,0 +1,2058 @@
+(DELAYFILE 
+(SDFVERSION "3.0" )
+(DESIGN "top")
+(DATE "Mon May 11 19:14:15 2020")
+(VENDOR "XILINX")
+(PROGRAM "Vivado")
+(VERSION "2018.2")
+(DIVIDER /)
+(TIMESCALE 1ps)
+(CELL 
+  (CELLTYPE "OBUF")
+  (INSTANCE Hsync_OBUF_inst)
+  (DELAY 
+    (PATHPULSE (50.0))
+    (ABSOLUTE 
+      (IOPATH I O (2914.4:3117.9:3117.9) (2914.4:3117.9:3117.9))
+    )
+  )
+)
+(CELL 
+  (CELLTYPE "OBUF")
+  (INSTANCE Vsync_OBUF_inst)
+  (DELAY 
+    (PATHPULSE (50.0))
+    (ABSOLUTE 
+      (IOPATH I O (2921.1:3124.7:3124.7) (2921.1:3124.7:3124.7))
+    )
+  )
+)
+(CELL 
+  (CELLTYPE "IBUF")
+  (INSTANCE btnC_IBUF_inst)
+  (DELAY 
+    (PATHPULSE (50.0))
+    (ABSOLUTE 
+      (IOPATH I O (1222.7:1289.4:1289.4) (1222.7:1289.4:1289.4))
+    )
+  )
+)
+(CELL 
+  (CELLTYPE "BUFG")
+  (INSTANCE clk_IBUF_BUFG_inst)
+  (DELAY 
+    (PATHPULSE (50.0))
+    (ABSOLUTE 
+      (IOPATH I O (72.0:76.0:76.0) (72.0:76.0:76.0))
+    )
+  )
+)
+(CELL 
+  (CELLTYPE "IBUF")
+  (INSTANCE clk_IBUF_inst)
+  (DELAY 
+    (PATHPULSE (50.0))
+    (ABSOLUTE 
+      (IOPATH I O (1239.6:1306.5:1306.5) (1239.6:1306.5:1306.5))
+    )
+  )
+)
+(CELL 
+  (CELLTYPE "LUT1")
+  (INSTANCE cnt\[15\]_i_2)
+  (DELAY 
+    (PATHPULSE (50.0))
+    (ABSOLUTE 
+      (IOPATH I0 O (78.0:97.0:97.0) (78.0:97.0:97.0))
+    )
+  )
+)
+(CELL 
+  (CELLTYPE "FDRE")
+  (INSTANCE cnt_reg\[13\])
+  (DELAY 
+    (ABSOLUTE 
+      (IOPATH C Q (208.0:259.0:259.0) (208.0:259.0:259.0))
+    )
+  )
+    (TIMINGCHECK
+      (SETUPHOLD (posedge CE) (posedge C) (63.0:78.0:78.0) (-10.0:-10.0:-10.0))
+      (SETUPHOLD (negedge CE) (posedge C) (63.0:78.0:78.0) (-10.0:-10.0:-10.0))
+      (SETUPHOLD (posedge D) (posedge C) (-54.0:-44.0:-44.0) (177.0:177.0:177.0))
+      (SETUPHOLD (negedge D) (posedge C) (-54.0:-44.0:-44.0) (177.0:177.0:177.0))
+      (SETUPHOLD (posedge R) (posedge C) (250.0:311.0:311.0) (-48.0:-48.0:-48.0))
+      (SETUPHOLD (negedge R) (posedge C) (250.0:311.0:311.0) (-48.0:-48.0:-48.0))
+    )
+)
+(CELL 
+  (CELLTYPE "FDRE")
+  (INSTANCE cnt_reg\[14\])
+  (DELAY 
+    (ABSOLUTE 
+      (IOPATH C Q (208.0:259.0:259.0) (208.0:259.0:259.0))
+    )
+  )
+    (TIMINGCHECK
+      (SETUPHOLD (posedge CE) (posedge C) (63.0:78.0:78.0) (-10.0:-10.0:-10.0))
+      (SETUPHOLD (negedge CE) (posedge C) (63.0:78.0:78.0) (-10.0:-10.0:-10.0))
+      (SETUPHOLD (posedge D) (posedge C) (-54.0:-44.0:-44.0) (177.0:177.0:177.0))
+      (SETUPHOLD (negedge D) (posedge C) (-54.0:-44.0:-44.0) (177.0:177.0:177.0))
+      (SETUPHOLD (posedge R) (posedge C) (250.0:311.0:311.0) (-48.0:-48.0:-48.0))
+      (SETUPHOLD (negedge R) (posedge C) (250.0:311.0:311.0) (-48.0:-48.0:-48.0))
+    )
+)
+(CELL 
+  (CELLTYPE "FDRE")
+  (INSTANCE cnt_reg\[15\])
+  (DELAY 
+    (ABSOLUTE 
+      (IOPATH C Q (208.0:259.0:259.0) (208.0:259.0:259.0))
+    )
+  )
+    (TIMINGCHECK
+      (SETUPHOLD (posedge CE) (posedge C) (63.0:78.0:78.0) (-10.0:-10.0:-10.0))
+      (SETUPHOLD (negedge CE) (posedge C) (63.0:78.0:78.0) (-10.0:-10.0:-10.0))
+      (SETUPHOLD (posedge D) (posedge C) (-54.0:-44.0:-44.0) (177.0:177.0:177.0))
+      (SETUPHOLD (negedge D) (posedge C) (-54.0:-44.0:-44.0) (177.0:177.0:177.0))
+      (SETUPHOLD (posedge R) (posedge C) (250.0:311.0:311.0) (-48.0:-48.0:-48.0))
+      (SETUPHOLD (negedge R) (posedge C) (250.0:311.0:311.0) (-48.0:-48.0:-48.0))
+    )
+)
+(CELL 
+  (CELLTYPE "CARRY4")
+  (INSTANCE cnt_reg\[15\]_i_1)
+  (DELAY 
+    (PATHPULSE (50.0))
+    (ABSOLUTE 
+      (IOPATH CYINIT O[0] (278.0:356.0:356.0) (278.0:356.0:356.0))
+      (IOPATH CI O[0] (107.0:170.0:170.0) (107.0:170.0:170.0))
+      (IOPATH S[0] O[0] (127.0:167.0:167.0) (127.0:167.0:167.0))
+      (IOPATH S[1] O[1] (114.0:151.0:151.0) (114.0:151.0:151.0))
+      (IOPATH S[0] O[1] (214.0:283.0:283.0) (214.0:283.0:283.0))
+      (IOPATH CYINIT O[1] (338.0:432.0:432.0) (338.0:432.0:432.0))
+      (IOPATH CI O[1] (185.0:240.0:240.0) (185.0:240.0:240.0))
+      (IOPATH DI[0] O[1] (187.0:313.0:313.0) (187.0:313.0:313.0))
+      (IOPATH S[2] O[2] (129.0:171.0:171.0) (129.0:171.0:171.0))
+      (IOPATH S[1] O[2] (313.0:414.0:414.0) (313.0:414.0:414.0))
+      (IOPATH S[0] O[2] (293.0:387.0:387.0) (293.0:387.0:387.0))
+      (IOPATH DI[1] O[2] (265.0:410.0:410.0) (265.0:410.0:410.0))
+      (IOPATH DI[0] O[2] (274.0:423.0:423.0) (274.0:423.0:423.0))
+      (IOPATH CYINIT O[2] (344.0:441.0:441.0) (344.0:441.0:441.0))
+      (IOPATH CI O[2] (144.0:193.0:193.0) (144.0:193.0:193.0))
+      (IOPATH CYINIT CO[0] (319.0:438.0:438.0) (319.0:438.0:438.0))
+      (IOPATH CI CO[0] (138.0:223.0:223.0) (138.0:223.0:223.0))
+      (IOPATH S[0] CO[0] (194.0:256.0:256.0) (194.0:256.0:256.0))
+      (IOPATH DI[0] CO[0] (188.0:320.0:320.0) (188.0:320.0:320.0))
+      (IOPATH S[1] CO[1] (264.0:349.0:349.0) (264.0:349.0:349.0))
+      (IOPATH S[0] CO[1] (244.0:322.0:322.0) (244.0:322.0:322.0))
+      (IOPATH DI[1] CO[1] (210.0:345.0:345.0) (210.0:345.0:345.0))
+      (IOPATH DI[0] CO[1] (223.0:361.0:361.0) (223.0:361.0:361.0))
+      (IOPATH CYINIT CO[1] (293.0:392.0:392.0) (293.0:392.0:392.0))
+      (IOPATH CI CO[1] (94.0:134.0:134.0) (94.0:134.0:134.0))
+      (IOPATH S[3] CO[3] (213.0:282.0:282.0) (213.0:282.0:282.0))
+      (IOPATH S[2] CO[3] (214.0:283.0:283.0) (214.0:283.0:283.0))
+      (IOPATH S[1] CO[3] (298.0:394.0:394.0) (298.0:394.0:394.0))
+      (IOPATH S[0] CO[3] (284.0:375.0:375.0) (284.0:375.0:375.0))
+      (IOPATH DI[3] CO[3] (183.0:285.0:285.0) (183.0:285.0:285.0))
+      (IOPATH DI[2] CO[3] (181.0:295.0:295.0) (181.0:295.0:295.0))
+      (IOPATH DI[1] CO[3] (250.0:374.0:374.0) (250.0:374.0:374.0))
+      (IOPATH DI[0] CO[3] (258.0:392.0:392.0) (258.0:392.0:392.0))
+      (IOPATH CYINIT CO[3] (347.0:432.0:432.0) (347.0:432.0:432.0))
+      (IOPATH CI CO[3] (72.0:89.0:89.0) (72.0:89.0:89.0))
+    )
+  )
+)
+(CELL 
+  (CELLTYPE "OBUF")
+  (INSTANCE led_OBUF\[0\]_inst)
+  (DELAY 
+    (PATHPULSE (50.0))
+    (ABSOLUTE 
+      (IOPATH I O (2922.5:3126.2:3126.2) (2922.5:3126.2:3126.2))
+    )
+  )
+)
+(CELL 
+  (CELLTYPE "LUT3")
+  (INSTANCE led_OBUF\[0\]_inst_i_1)
+  (DELAY 
+    (PATHPULSE (50.0))
+    (ABSOLUTE 
+      (IOPATH I2 O (84.0:105.0:105.0) (84.0:105.0:105.0))
+      (IOPATH I1 O (91.0:113.0:113.0) (91.0:113.0:113.0))
+      (IOPATH I0 O (89.0:111.0:111.0) (89.0:111.0:111.0))
+    )
+  )
+)
+(CELL 
+  (CELLTYPE "OBUF")
+  (INSTANCE led_OBUF\[10\]_inst)
+  (DELAY 
+    (PATHPULSE (50.0))
+    (ABSOLUTE 
+      (IOPATH I O (2942.9:3146.8:3146.8) (2942.9:3146.8:3146.8))
+    )
+  )
+)
+(CELL 
+  (CELLTYPE "LUT2")
+  (INSTANCE led_OBUF\[10\]_inst_i_1)
+  (DELAY 
+    (PATHPULSE (50.0))
+    (ABSOLUTE 
+      (IOPATH I1 O (78.0:97.0:97.0) (78.0:97.0:97.0))
+      (IOPATH I0 O (78.0:97.0:97.0) (78.0:97.0:97.0))
+    )
+  )
+)
+(CELL 
+  (CELLTYPE "OBUF")
+  (INSTANCE led_OBUF\[11\]_inst)
+  (DELAY 
+    (PATHPULSE (50.0))
+    (ABSOLUTE 
+      (IOPATH I O (2921.5:3125.1:3125.1) (2921.5:3125.1:3125.1))
+    )
+  )
+)
+(CELL 
+  (CELLTYPE "LUT2")
+  (INSTANCE led_OBUF\[11\]_inst_i_1)
+  (DELAY 
+    (PATHPULSE (50.0))
+    (ABSOLUTE 
+      (IOPATH I1 O (84.0:105.0:105.0) (84.0:105.0:105.0))
+      (IOPATH I0 O (91.0:113.0:113.0) (91.0:113.0:113.0))
+    )
+  )
+)
+(CELL 
+  (CELLTYPE "OBUF")
+  (INSTANCE led_OBUF\[12\]_inst)
+  (DELAY 
+    (PATHPULSE (50.0))
+    (ABSOLUTE 
+      (IOPATH I O (2935.7:3139.5:3139.5) (2935.7:3139.5:3139.5))
+    )
+  )
+)
+(CELL 
+  (CELLTYPE "LUT2")
+  (INSTANCE led_OBUF\[12\]_inst_i_1)
+  (DELAY 
+    (PATHPULSE (50.0))
+    (ABSOLUTE 
+      (IOPATH I1 O (78.0:97.0:97.0) (78.0:97.0:97.0))
+      (IOPATH I0 O (78.0:97.0:97.0) (78.0:97.0:97.0))
+    )
+  )
+)
+(CELL 
+  (CELLTYPE "OBUF")
+  (INSTANCE led_OBUF\[13\]_inst)
+  (DELAY 
+    (PATHPULSE (50.0))
+    (ABSOLUTE 
+      (IOPATH I O (2925.1:3128.8:3128.8) (2925.1:3128.8:3128.8))
+    )
+  )
+)
+(CELL 
+  (CELLTYPE "LUT2")
+  (INSTANCE led_OBUF\[13\]_inst_i_1)
+  (DELAY 
+    (PATHPULSE (50.0))
+    (ABSOLUTE 
+      (IOPATH I1 O (84.0:105.0:105.0) (84.0:105.0:105.0))
+      (IOPATH I0 O (91.0:113.0:113.0) (91.0:113.0:113.0))
+    )
+  )
+)
+(CELL 
+  (CELLTYPE "OBUF")
+  (INSTANCE led_OBUF\[14\]_inst)
+  (DELAY 
+    (PATHPULSE (50.0))
+    (ABSOLUTE 
+      (IOPATH I O (2933.0:3136.8:3136.8) (2933.0:3136.8:3136.8))
+    )
+  )
+)
+(CELL 
+  (CELLTYPE "LUT2")
+  (INSTANCE led_OBUF\[14\]_inst_i_1)
+  (DELAY 
+    (PATHPULSE (50.0))
+    (ABSOLUTE 
+      (IOPATH I1 O (78.0:97.0:97.0) (78.0:97.0:97.0))
+      (IOPATH I0 O (78.0:97.0:97.0) (78.0:97.0:97.0))
+    )
+  )
+)
+(CELL 
+  (CELLTYPE "OBUF")
+  (INSTANCE led_OBUF\[15\]_inst)
+  (DELAY 
+    (PATHPULSE (50.0))
+    (ABSOLUTE 
+      (IOPATH I O (2939.0:3142.8:3142.8) (2939.0:3142.8:3142.8))
+    )
+  )
+)
+(CELL 
+  (CELLTYPE "LUT2")
+  (INSTANCE led_OBUF\[15\]_inst_i_1)
+  (DELAY 
+    (PATHPULSE (50.0))
+    (ABSOLUTE 
+      (IOPATH I1 O (78.0:97.0:97.0) (78.0:97.0:97.0))
+      (IOPATH I0 O (78.0:97.0:97.0) (78.0:97.0:97.0))
+    )
+  )
+)
+(CELL 
+  (CELLTYPE "OBUF")
+  (INSTANCE led_OBUF\[1\]_inst)
+  (DELAY 
+    (PATHPULSE (50.0))
+    (ABSOLUTE 
+      (IOPATH I O (2947.2:3151.1:3151.1) (2947.2:3151.1:3151.1))
+    )
+  )
+)
+(CELL 
+  (CELLTYPE "LUT2")
+  (INSTANCE led_OBUF\[1\]_inst_i_1)
+  (DELAY 
+    (PATHPULSE (50.0))
+    (ABSOLUTE 
+      (IOPATH I1 O (84.0:105.0:105.0) (84.0:105.0:105.0))
+      (IOPATH I0 O (91.0:113.0:113.0) (91.0:113.0:113.0))
+    )
+  )
+)
+(CELL 
+  (CELLTYPE "OBUF")
+  (INSTANCE led_OBUF\[2\]_inst)
+  (DELAY 
+    (PATHPULSE (50.0))
+    (ABSOLUTE 
+      (IOPATH I O (2918.7:3122.4:3122.4) (2918.7:3122.4:3122.4))
+    )
+  )
+)
+(CELL 
+  (CELLTYPE "LUT2")
+  (INSTANCE led_OBUF\[2\]_inst_i_1)
+  (DELAY 
+    (PATHPULSE (50.0))
+    (ABSOLUTE 
+      (IOPATH I1 O (78.0:97.0:97.0) (78.0:97.0:97.0))
+      (IOPATH I0 O (78.0:97.0:97.0) (78.0:97.0:97.0))
+    )
+  )
+)
+(CELL 
+  (CELLTYPE "OBUF")
+  (INSTANCE led_OBUF\[3\]_inst)
+  (DELAY 
+    (PATHPULSE (50.0))
+    (ABSOLUTE 
+      (IOPATH I O (2926.7:3130.4:3130.4) (2926.7:3130.4:3130.4))
+    )
+  )
+)
+(CELL 
+  (CELLTYPE "LUT2")
+  (INSTANCE led_OBUF\[3\]_inst_i_1)
+  (DELAY 
+    (PATHPULSE (50.0))
+    (ABSOLUTE 
+      (IOPATH I1 O (84.0:105.0:105.0) (84.0:105.0:105.0))
+      (IOPATH I0 O (91.0:113.0:113.0) (91.0:113.0:113.0))
+    )
+  )
+)
+(CELL 
+  (CELLTYPE "OBUF")
+  (INSTANCE led_OBUF\[4\]_inst)
+  (DELAY 
+    (PATHPULSE (50.0))
+    (ABSOLUTE 
+      (IOPATH I O (2926.3:3130.0:3130.0) (2926.3:3130.0:3130.0))
+    )
+  )
+)
+(CELL 
+  (CELLTYPE "LUT2")
+  (INSTANCE led_OBUF\[4\]_inst_i_1)
+  (DELAY 
+    (PATHPULSE (50.0))
+    (ABSOLUTE 
+      (IOPATH I1 O (78.0:97.0:97.0) (78.0:97.0:97.0))
+      (IOPATH I0 O (78.0:97.0:97.0) (78.0:97.0:97.0))
+    )
+  )
+)
+(CELL 
+  (CELLTYPE "OBUF")
+  (INSTANCE led_OBUF\[5\]_inst)
+  (DELAY 
+    (PATHPULSE (50.0))
+    (ABSOLUTE 
+      (IOPATH I O (2932.1:3135.9:3135.9) (2932.1:3135.9:3135.9))
+    )
+  )
+)
+(CELL 
+  (CELLTYPE "LUT2")
+  (INSTANCE led_OBUF\[5\]_inst_i_1)
+  (DELAY 
+    (PATHPULSE (50.0))
+    (ABSOLUTE 
+      (IOPATH I1 O (84.0:105.0:105.0) (84.0:105.0:105.0))
+      (IOPATH I0 O (91.0:113.0:113.0) (91.0:113.0:113.0))
+    )
+  )
+)
+(CELL 
+  (CELLTYPE "OBUF")
+  (INSTANCE led_OBUF\[6\]_inst)
+  (DELAY 
+    (PATHPULSE (50.0))
+    (ABSOLUTE 
+      (IOPATH I O (2923.9:3127.6:3127.6) (2923.9:3127.6:3127.6))
+    )
+  )
+)
+(CELL 
+  (CELLTYPE "LUT2")
+  (INSTANCE led_OBUF\[6\]_inst_i_1)
+  (DELAY 
+    (PATHPULSE (50.0))
+    (ABSOLUTE 
+      (IOPATH I1 O (78.0:97.0:97.0) (78.0:97.0:97.0))
+      (IOPATH I0 O (78.0:97.0:97.0) (78.0:97.0:97.0))
+    )
+  )
+)
+(CELL 
+  (CELLTYPE "OBUF")
+  (INSTANCE led_OBUF\[7\]_inst)
+  (DELAY 
+    (PATHPULSE (50.0))
+    (ABSOLUTE 
+      (IOPATH I O (2918.4:3122.1:3122.1) (2918.4:3122.1:3122.1))
+    )
+  )
+)
+(CELL 
+  (CELLTYPE "LUT2")
+  (INSTANCE led_OBUF\[7\]_inst_i_1)
+  (DELAY 
+    (PATHPULSE (50.0))
+    (ABSOLUTE 
+      (IOPATH I1 O (84.0:105.0:105.0) (84.0:105.0:105.0))
+      (IOPATH I0 O (91.0:113.0:113.0) (91.0:113.0:113.0))
+    )
+  )
+)
+(CELL 
+  (CELLTYPE "OBUF")
+  (INSTANCE led_OBUF\[8\]_inst)
+  (DELAY 
+    (PATHPULSE (50.0))
+    (ABSOLUTE 
+      (IOPATH I O (2921.8:3125.5:3125.5) (2921.8:3125.5:3125.5))
+    )
+  )
+)
+(CELL 
+  (CELLTYPE "LUT2")
+  (INSTANCE led_OBUF\[8\]_inst_i_1)
+  (DELAY 
+    (PATHPULSE (50.0))
+    (ABSOLUTE 
+      (IOPATH I1 O (78.0:97.0:97.0) (78.0:97.0:97.0))
+      (IOPATH I0 O (78.0:97.0:97.0) (78.0:97.0:97.0))
+    )
+  )
+)
+(CELL 
+  (CELLTYPE "OBUF")
+  (INSTANCE led_OBUF\[9\]_inst)
+  (DELAY 
+    (PATHPULSE (50.0))
+    (ABSOLUTE 
+      (IOPATH I O (2925.9:3129.6:3129.6) (2925.9:3129.6:3129.6))
+    )
+  )
+)
+(CELL 
+  (CELLTYPE "LUT2")
+  (INSTANCE led_OBUF\[9\]_inst_i_1)
+  (DELAY 
+    (PATHPULSE (50.0))
+    (ABSOLUTE 
+      (IOPATH I1 O (84.0:105.0:105.0) (84.0:105.0:105.0))
+      (IOPATH I0 O (91.0:113.0:113.0) (91.0:113.0:113.0))
+    )
+  )
+)
+(CELL 
+  (CELLTYPE "OBUF")
+  (INSTANCE px_strobe_OBUF_inst)
+  (DELAY 
+    (PATHPULSE (50.0))
+    (ABSOLUTE 
+      (IOPATH I O (2048.3:2207.8:2207.8) (2048.3:2207.8:2207.8))
+    )
+  )
+)
+(CELL 
+  (CELLTYPE "FDRE")
+  (INSTANCE px_strobe_reg)
+  (DELAY 
+    (ABSOLUTE 
+      (IOPATH C Q (208.0:259.0:259.0) (208.0:259.0:259.0))
+    )
+  )
+    (TIMINGCHECK
+      (SETUPHOLD (posedge CE) (posedge C) (63.0:78.0:78.0) (-10.0:-10.0:-10.0))
+      (SETUPHOLD (negedge CE) (posedge C) (63.0:78.0:78.0) (-10.0:-10.0:-10.0))
+      (SETUPHOLD (posedge D) (posedge C) (-54.0:-44.0:-44.0) (177.0:177.0:177.0))
+      (SETUPHOLD (negedge D) (posedge C) (-54.0:-44.0:-44.0) (177.0:177.0:177.0))
+      (SETUPHOLD (posedge R) (posedge C) (250.0:311.0:311.0) (-48.0:-48.0:-48.0))
+      (SETUPHOLD (negedge R) (posedge C) (250.0:311.0:311.0) (-48.0:-48.0:-48.0))
+    )
+)
+(CELL 
+  (CELLTYPE "IBUF")
+  (INSTANCE sw_IBUF\[0\]_inst)
+  (DELAY 
+    (PATHPULSE (50.0))
+    (ABSOLUTE 
+      (IOPATH I O (1234.2:1300.9:1300.9) (1234.2:1300.9:1300.9))
+    )
+  )
+)
+(CELL 
+  (CELLTYPE "IBUF")
+  (INSTANCE sw_IBUF\[10\]_inst)
+  (DELAY 
+    (PATHPULSE (50.0))
+    (ABSOLUTE 
+      (IOPATH I O (1239.2:1306.0:1306.0) (1239.2:1306.0:1306.0))
+    )
+  )
+)
+(CELL 
+  (CELLTYPE "IBUF")
+  (INSTANCE sw_IBUF\[11\]_inst)
+  (DELAY 
+    (PATHPULSE (50.0))
+    (ABSOLUTE 
+      (IOPATH I O (1245.0:1311.9:1311.9) (1245.0:1311.9:1311.9))
+    )
+  )
+)
+(CELL 
+  (CELLTYPE "IBUF")
+  (INSTANCE sw_IBUF\[12\]_inst)
+  (DELAY 
+    (PATHPULSE (50.0))
+    (ABSOLUTE 
+      (IOPATH I O (1249.8:1316.8:1316.8) (1249.8:1316.8:1316.8))
+    )
+  )
+)
+(CELL 
+  (CELLTYPE "IBUF")
+  (INSTANCE sw_IBUF\[13\]_inst)
+  (DELAY 
+    (PATHPULSE (50.0))
+    (ABSOLUTE 
+      (IOPATH I O (1234.2:1301.0:1301.0) (1234.2:1301.0:1301.0))
+    )
+  )
+)
+(CELL 
+  (CELLTYPE "IBUF")
+  (INSTANCE sw_IBUF\[14\]_inst)
+  (DELAY 
+    (PATHPULSE (50.0))
+    (ABSOLUTE 
+      (IOPATH I O (1236.5:1303.3:1303.3) (1236.5:1303.3:1303.3))
+    )
+  )
+)
+(CELL 
+  (CELLTYPE "IBUF")
+  (INSTANCE sw_IBUF\[15\]_inst)
+  (DELAY 
+    (PATHPULSE (50.0))
+    (ABSOLUTE 
+      (IOPATH I O (1237.5:1304.3:1304.3) (1237.5:1304.3:1304.3))
+    )
+  )
+)
+(CELL 
+  (CELLTYPE "IBUF")
+  (INSTANCE sw_IBUF\[1\]_inst)
+  (DELAY 
+    (PATHPULSE (50.0))
+    (ABSOLUTE 
+      (IOPATH I O (1242.6:1309.4:1309.4) (1242.6:1309.4:1309.4))
+    )
+  )
+)
+(CELL 
+  (CELLTYPE "IBUF")
+  (INSTANCE sw_IBUF\[2\]_inst)
+  (DELAY 
+    (PATHPULSE (50.0))
+    (ABSOLUTE 
+      (IOPATH I O (1245.0:1311.9:1311.9) (1245.0:1311.9:1311.9))
+    )
+  )
+)
+(CELL 
+  (CELLTYPE "IBUF")
+  (INSTANCE sw_IBUF\[3\]_inst)
+  (DELAY 
+    (PATHPULSE (50.0))
+    (ABSOLUTE 
+      (IOPATH I O (1229.8:1296.6:1296.6) (1229.8:1296.6:1296.6))
+    )
+  )
+)
+(CELL 
+  (CELLTYPE "IBUF")
+  (INSTANCE sw_IBUF\[4\]_inst)
+  (DELAY 
+    (PATHPULSE (50.0))
+    (ABSOLUTE 
+      (IOPATH I O (1232.1:1298.8:1298.8) (1232.1:1298.8:1298.8))
+    )
+  )
+)
+(CELL 
+  (CELLTYPE "IBUF")
+  (INSTANCE sw_IBUF\[5\]_inst)
+  (DELAY 
+    (PATHPULSE (50.0))
+    (ABSOLUTE 
+      (IOPATH I O (1247.2:1314.2:1314.2) (1247.2:1314.2:1314.2))
+    )
+  )
+)
+(CELL 
+  (CELLTYPE "IBUF")
+  (INSTANCE sw_IBUF\[6\]_inst)
+  (DELAY 
+    (PATHPULSE (50.0))
+    (ABSOLUTE 
+      (IOPATH I O (1231.1:1297.8:1297.8) (1231.1:1297.8:1297.8))
+    )
+  )
+)
+(CELL 
+  (CELLTYPE "IBUF")
+  (INSTANCE sw_IBUF\[7\]_inst)
+  (DELAY 
+    (PATHPULSE (50.0))
+    (ABSOLUTE 
+      (IOPATH I O (1240.1:1307.0:1307.0) (1240.1:1307.0:1307.0))
+    )
+  )
+)
+(CELL 
+  (CELLTYPE "IBUF")
+  (INSTANCE sw_IBUF\[8\]_inst)
+  (DELAY 
+    (PATHPULSE (50.0))
+    (ABSOLUTE 
+      (IOPATH I O (1235.8:1302.6:1302.6) (1235.8:1302.6:1302.6))
+    )
+  )
+)
+(CELL 
+  (CELLTYPE "IBUF")
+  (INSTANCE sw_IBUF\[9\]_inst)
+  (DELAY 
+    (PATHPULSE (50.0))
+    (ABSOLUTE 
+      (IOPATH I O (1233.5:1300.3:1300.3) (1233.5:1300.3:1300.3))
+    )
+  )
+)
+(CELL 
+  (CELLTYPE "LUT6")
+  (INSTANCE vga/h_sync\[0\]_i_1)
+  (DELAY 
+    (PATHPULSE (50.0))
+    (ABSOLUTE 
+      (IOPATH I5 O (78.0:97.0:97.0) (78.0:97.0:97.0))
+      (IOPATH I4 O (78.0:97.0:97.0) (78.0:97.0:97.0))
+      (IOPATH I3 O (78.0:97.0:97.0) (78.0:97.0:97.0))
+      (IOPATH I2 O (78.0:97.0:97.0) (78.0:97.0:97.0))
+      (IOPATH I1 O (78.0:97.0:97.0) (78.0:97.0:97.0))
+      (IOPATH I0 O (78.0:97.0:97.0) (78.0:97.0:97.0))
+    )
+  )
+)
+(CELL 
+  (CELLTYPE "LUT2")
+  (INSTANCE vga/h_sync\[1\]_i_1)
+  (DELAY 
+    (PATHPULSE (50.0))
+    (ABSOLUTE 
+      (IOPATH I1 O (78.0:97.0:97.0) (78.0:97.0:97.0))
+      (IOPATH I0 O (78.0:97.0:97.0) (78.0:97.0:97.0))
+    )
+  )
+)
+(CELL 
+  (CELLTYPE "LUT3")
+  (INSTANCE vga/h_sync\[2\]_i_1)
+  (DELAY 
+    (PATHPULSE (50.0))
+    (ABSOLUTE 
+      (IOPATH I2 O (84.0:105.0:105.0) (84.0:105.0:105.0))
+      (IOPATH I1 O (91.0:113.0:113.0) (91.0:113.0:113.0))
+      (IOPATH I0 O (89.0:111.0:111.0) (89.0:111.0:111.0))
+    )
+  )
+)
+(CELL 
+  (CELLTYPE "LUT4")
+  (INSTANCE vga/h_sync\[3\]_i_1)
+  (DELAY 
+    (PATHPULSE (50.0))
+    (ABSOLUTE 
+      (IOPATH I3 O (84.0:105.0:105.0) (84.0:105.0:105.0))
+      (IOPATH I2 O (91.0:113.0:113.0) (91.0:113.0:113.0))
+      (IOPATH I1 O (89.0:111.0:111.0) (89.0:111.0:111.0))
+      (IOPATH I0 O (78.0:97.0:97.0) (78.0:97.0:97.0))
+    )
+  )
+)
+(CELL 
+  (CELLTYPE "LUT6")
+  (INSTANCE vga/h_sync\[4\]_i_1)
+  (DELAY 
+    (PATHPULSE (50.0))
+    (ABSOLUTE 
+      (IOPATH I5 O (78.0:97.0:97.0) (78.0:97.0:97.0))
+      (IOPATH I4 O (78.0:97.0:97.0) (78.0:97.0:97.0))
+      (IOPATH I3 O (78.0:97.0:97.0) (78.0:97.0:97.0))
+      (IOPATH I2 O (78.0:97.0:97.0) (78.0:97.0:97.0))
+      (IOPATH I1 O (78.0:97.0:97.0) (78.0:97.0:97.0))
+      (IOPATH I0 O (78.0:97.0:97.0) (78.0:97.0:97.0))
+    )
+  )
+)
+(CELL 
+  (CELLTYPE "LUT3")
+  (INSTANCE vga/h_sync\[4\]_i_2)
+  (DELAY 
+    (PATHPULSE (50.0))
+    (ABSOLUTE 
+      (IOPATH I2 O (84.0:105.0:105.0) (84.0:105.0:105.0))
+      (IOPATH I1 O (91.0:113.0:113.0) (91.0:113.0:113.0))
+      (IOPATH I0 O (89.0:111.0:111.0) (89.0:111.0:111.0))
+    )
+  )
+)
+(CELL 
+  (CELLTYPE "LUT5")
+  (INSTANCE vga/h_sync\[5\]_i_1)
+  (DELAY 
+    (PATHPULSE (50.0))
+    (ABSOLUTE 
+      (IOPATH I4 O (78.0:97.0:97.0) (78.0:97.0:97.0))
+      (IOPATH I3 O (78.0:97.0:97.0) (78.0:97.0:97.0))
+      (IOPATH I2 O (78.0:97.0:97.0) (78.0:97.0:97.0))
+      (IOPATH I1 O (78.0:97.0:97.0) (78.0:97.0:97.0))
+      (IOPATH I0 O (78.0:97.0:97.0) (78.0:97.0:97.0))
+    )
+  )
+)
+(CELL 
+  (CELLTYPE "LUT5")
+  (INSTANCE vga/h_sync\[5\]_i_2)
+  (DELAY 
+    (PATHPULSE (50.0))
+    (ABSOLUTE 
+      (IOPATH I4 O (78.0:97.0:97.0) (78.0:97.0:97.0))
+      (IOPATH I3 O (78.0:97.0:97.0) (78.0:97.0:97.0))
+      (IOPATH I2 O (78.0:97.0:97.0) (78.0:97.0:97.0))
+      (IOPATH I1 O (78.0:97.0:97.0) (78.0:97.0:97.0))
+      (IOPATH I0 O (78.0:97.0:97.0) (78.0:97.0:97.0))
+    )
+  )
+)
+(CELL 
+  (CELLTYPE "LUT5")
+  (INSTANCE vga/h_sync\[6\]_i_1)
+  (DELAY 
+    (PATHPULSE (50.0))
+    (ABSOLUTE 
+      (IOPATH I4 O (78.0:97.0:97.0) (78.0:97.0:97.0))
+      (IOPATH I3 O (78.0:97.0:97.0) (78.0:97.0:97.0))
+      (IOPATH I2 O (78.0:97.0:97.0) (78.0:97.0:97.0))
+      (IOPATH I1 O (78.0:97.0:97.0) (78.0:97.0:97.0))
+      (IOPATH I0 O (78.0:97.0:97.0) (78.0:97.0:97.0))
+    )
+  )
+)
+(CELL 
+  (CELLTYPE "LUT6")
+  (INSTANCE vga/h_sync\[7\]_i_1)
+  (DELAY 
+    (PATHPULSE (50.0))
+    (ABSOLUTE 
+      (IOPATH I5 O (78.0:97.0:97.0) (78.0:97.0:97.0))
+      (IOPATH I4 O (78.0:97.0:97.0) (78.0:97.0:97.0))
+      (IOPATH I3 O (78.0:97.0:97.0) (78.0:97.0:97.0))
+      (IOPATH I2 O (78.0:97.0:97.0) (78.0:97.0:97.0))
+      (IOPATH I1 O (78.0:97.0:97.0) (78.0:97.0:97.0))
+      (IOPATH I0 O (78.0:97.0:97.0) (78.0:97.0:97.0))
+    )
+  )
+)
+(CELL 
+  (CELLTYPE "LUT6")
+  (INSTANCE vga/h_sync\[8\]_i_1)
+  (DELAY 
+    (PATHPULSE (50.0))
+    (ABSOLUTE 
+      (IOPATH I5 O (78.0:97.0:97.0) (78.0:97.0:97.0))
+      (IOPATH I4 O (78.0:97.0:97.0) (78.0:97.0:97.0))
+      (IOPATH I3 O (78.0:97.0:97.0) (78.0:97.0:97.0))
+      (IOPATH I2 O (78.0:97.0:97.0) (78.0:97.0:97.0))
+      (IOPATH I1 O (78.0:97.0:97.0) (78.0:97.0:97.0))
+      (IOPATH I0 O (78.0:97.0:97.0) (78.0:97.0:97.0))
+    )
+  )
+)
+(CELL 
+  (CELLTYPE "LUT2")
+  (INSTANCE vga/h_sync\[8\]_i_2)
+  (DELAY 
+    (PATHPULSE (50.0))
+    (ABSOLUTE 
+      (IOPATH I1 O (84.0:105.0:105.0) (84.0:105.0:105.0))
+      (IOPATH I0 O (91.0:113.0:113.0) (91.0:113.0:113.0))
+    )
+  )
+)
+(CELL 
+  (CELLTYPE "LUT6")
+  (INSTANCE vga/h_sync\[9\]_i_1)
+  (DELAY 
+    (PATHPULSE (50.0))
+    (ABSOLUTE 
+      (IOPATH I5 O (78.0:97.0:97.0) (78.0:97.0:97.0))
+      (IOPATH I4 O (78.0:97.0:97.0) (78.0:97.0:97.0))
+      (IOPATH I3 O (78.0:97.0:97.0) (78.0:97.0:97.0))
+      (IOPATH I2 O (78.0:97.0:97.0) (78.0:97.0:97.0))
+      (IOPATH I1 O (78.0:97.0:97.0) (78.0:97.0:97.0))
+      (IOPATH I0 O (78.0:97.0:97.0) (78.0:97.0:97.0))
+    )
+  )
+)
+(CELL 
+  (CELLTYPE "LUT6")
+  (INSTANCE vga/h_sync\[9\]_i_2)
+  (DELAY 
+    (PATHPULSE (50.0))
+    (ABSOLUTE 
+      (IOPATH I5 O (78.0:97.0:97.0) (78.0:97.0:97.0))
+      (IOPATH I4 O (78.0:97.0:97.0) (78.0:97.0:97.0))
+      (IOPATH I3 O (78.0:97.0:97.0) (78.0:97.0:97.0))
+      (IOPATH I2 O (78.0:97.0:97.0) (78.0:97.0:97.0))
+      (IOPATH I1 O (78.0:97.0:97.0) (78.0:97.0:97.0))
+      (IOPATH I0 O (78.0:97.0:97.0) (78.0:97.0:97.0))
+    )
+  )
+)
+(CELL 
+  (CELLTYPE "LUT4")
+  (INSTANCE vga/h_sync\[9\]_i_3)
+  (DELAY 
+    (PATHPULSE (50.0))
+    (ABSOLUTE 
+      (IOPATH I3 O (78.0:97.0:97.0) (78.0:97.0:97.0))
+      (IOPATH I2 O (78.0:97.0:97.0) (78.0:97.0:97.0))
+      (IOPATH I1 O (78.0:97.0:97.0) (78.0:97.0:97.0))
+      (IOPATH I0 O (78.0:97.0:97.0) (78.0:97.0:97.0))
+    )
+  )
+)
+(CELL 
+  (CELLTYPE "LUT5")
+  (INSTANCE vga/h_sync\[9\]_i_4)
+  (DELAY 
+    (PATHPULSE (50.0))
+    (ABSOLUTE 
+      (IOPATH I4 O (78.0:97.0:97.0) (78.0:97.0:97.0))
+      (IOPATH I3 O (78.0:97.0:97.0) (78.0:97.0:97.0))
+      (IOPATH I2 O (78.0:97.0:97.0) (78.0:97.0:97.0))
+      (IOPATH I1 O (78.0:97.0:97.0) (78.0:97.0:97.0))
+      (IOPATH I0 O (78.0:97.0:97.0) (78.0:97.0:97.0))
+    )
+  )
+)
+(CELL 
+  (CELLTYPE "LUT6")
+  (INSTANCE vga/h_sync\[9\]_i_5)
+  (DELAY 
+    (PATHPULSE (50.0))
+    (ABSOLUTE 
+      (IOPATH I5 O (78.0:97.0:97.0) (78.0:97.0:97.0))
+      (IOPATH I4 O (78.0:97.0:97.0) (78.0:97.0:97.0))
+      (IOPATH I3 O (78.0:97.0:97.0) (78.0:97.0:97.0))
+      (IOPATH I2 O (78.0:97.0:97.0) (78.0:97.0:97.0))
+      (IOPATH I1 O (78.0:97.0:97.0) (78.0:97.0:97.0))
+      (IOPATH I0 O (78.0:97.0:97.0) (78.0:97.0:97.0))
+    )
+  )
+)
+(CELL 
+  (CELLTYPE "LUT4")
+  (INSTANCE vga/h_sync\[9\]_i_6)
+  (DELAY 
+    (PATHPULSE (50.0))
+    (ABSOLUTE 
+      (IOPATH I3 O (78.0:97.0:97.0) (78.0:97.0:97.0))
+      (IOPATH I2 O (78.0:97.0:97.0) (78.0:97.0:97.0))
+      (IOPATH I1 O (78.0:97.0:97.0) (78.0:97.0:97.0))
+      (IOPATH I0 O (78.0:97.0:97.0) (78.0:97.0:97.0))
+    )
+  )
+)
+(CELL 
+  (CELLTYPE "LUT3")
+  (INSTANCE vga/h_sync\[9\]_i_7)
+  (DELAY 
+    (PATHPULSE (50.0))
+    (ABSOLUTE 
+      (IOPATH I2 O (78.0:97.0:97.0) (78.0:97.0:97.0))
+      (IOPATH I1 O (78.0:97.0:97.0) (78.0:97.0:97.0))
+      (IOPATH I0 O (78.0:97.0:97.0) (78.0:97.0:97.0))
+    )
+  )
+)
+(CELL 
+  (CELLTYPE "LUT6")
+  (INSTANCE vga/h_sync\[9\]_i_8)
+  (DELAY 
+    (PATHPULSE (50.0))
+    (ABSOLUTE 
+      (IOPATH I5 O (78.0:97.0:97.0) (78.0:97.0:97.0))
+      (IOPATH I4 O (78.0:97.0:97.0) (78.0:97.0:97.0))
+      (IOPATH I3 O (78.0:97.0:97.0) (78.0:97.0:97.0))
+      (IOPATH I2 O (78.0:97.0:97.0) (78.0:97.0:97.0))
+      (IOPATH I1 O (78.0:97.0:97.0) (78.0:97.0:97.0))
+      (IOPATH I0 O (78.0:97.0:97.0) (78.0:97.0:97.0))
+    )
+  )
+)
+(CELL 
+  (CELLTYPE "FDRE")
+  (INSTANCE vga/h_sync_reg\[0\])
+  (DELAY 
+    (ABSOLUTE 
+      (IOPATH C Q (208.0:259.0:259.0) (208.0:259.0:259.0))
+    )
+  )
+    (TIMINGCHECK
+      (SETUPHOLD (posedge CE) (posedge C) (63.0:78.0:78.0) (-10.0:-10.0:-10.0))
+      (SETUPHOLD (negedge CE) (posedge C) (63.0:78.0:78.0) (-10.0:-10.0:-10.0))
+      (SETUPHOLD (posedge D) (posedge C) (-54.0:-44.0:-44.0) (177.0:177.0:177.0))
+      (SETUPHOLD (negedge D) (posedge C) (-54.0:-44.0:-44.0) (177.0:177.0:177.0))
+      (SETUPHOLD (posedge R) (posedge C) (250.0:311.0:311.0) (-48.0:-48.0:-48.0))
+      (SETUPHOLD (negedge R) (posedge C) (250.0:311.0:311.0) (-48.0:-48.0:-48.0))
+    )
+)
+(CELL 
+  (CELLTYPE "FDRE")
+  (INSTANCE vga/h_sync_reg\[1\])
+  (DELAY 
+    (ABSOLUTE 
+      (IOPATH C Q (208.0:259.0:259.0) (208.0:259.0:259.0))
+    )
+  )
+    (TIMINGCHECK
+      (SETUPHOLD (posedge CE) (posedge C) (63.0:78.0:78.0) (-10.0:-10.0:-10.0))
+      (SETUPHOLD (negedge CE) (posedge C) (63.0:78.0:78.0) (-10.0:-10.0:-10.0))
+      (SETUPHOLD (posedge D) (posedge C) (-54.0:-44.0:-44.0) (177.0:177.0:177.0))
+      (SETUPHOLD (negedge D) (posedge C) (-54.0:-44.0:-44.0) (177.0:177.0:177.0))
+      (SETUPHOLD (posedge R) (posedge C) (250.0:311.0:311.0) (-48.0:-48.0:-48.0))
+      (SETUPHOLD (negedge R) (posedge C) (250.0:311.0:311.0) (-48.0:-48.0:-48.0))
+    )
+)
+(CELL 
+  (CELLTYPE "FDRE")
+  (INSTANCE vga/h_sync_reg\[2\])
+  (DELAY 
+    (ABSOLUTE 
+      (IOPATH C Q (208.0:259.0:259.0) (208.0:259.0:259.0))
+    )
+  )
+    (TIMINGCHECK
+      (SETUPHOLD (posedge CE) (posedge C) (63.0:78.0:78.0) (-10.0:-10.0:-10.0))
+      (SETUPHOLD (negedge CE) (posedge C) (63.0:78.0:78.0) (-10.0:-10.0:-10.0))
+      (SETUPHOLD (posedge D) (posedge C) (-54.0:-44.0:-44.0) (177.0:177.0:177.0))
+      (SETUPHOLD (negedge D) (posedge C) (-54.0:-44.0:-44.0) (177.0:177.0:177.0))
+      (SETUPHOLD (posedge R) (posedge C) (250.0:311.0:311.0) (-48.0:-48.0:-48.0))
+      (SETUPHOLD (negedge R) (posedge C) (250.0:311.0:311.0) (-48.0:-48.0:-48.0))
+    )
+)
+(CELL 
+  (CELLTYPE "FDRE")
+  (INSTANCE vga/h_sync_reg\[3\])
+  (DELAY 
+    (ABSOLUTE 
+      (IOPATH C Q (208.0:259.0:259.0) (208.0:259.0:259.0))
+    )
+  )
+    (TIMINGCHECK
+      (SETUPHOLD (posedge CE) (posedge C) (63.0:78.0:78.0) (-10.0:-10.0:-10.0))
+      (SETUPHOLD (negedge CE) (posedge C) (63.0:78.0:78.0) (-10.0:-10.0:-10.0))
+      (SETUPHOLD (posedge D) (posedge C) (-54.0:-44.0:-44.0) (177.0:177.0:177.0))
+      (SETUPHOLD (negedge D) (posedge C) (-54.0:-44.0:-44.0) (177.0:177.0:177.0))
+      (SETUPHOLD (posedge R) (posedge C) (250.0:311.0:311.0) (-48.0:-48.0:-48.0))
+      (SETUPHOLD (negedge R) (posedge C) (250.0:311.0:311.0) (-48.0:-48.0:-48.0))
+    )
+)
+(CELL 
+  (CELLTYPE "FDRE")
+  (INSTANCE vga/h_sync_reg\[4\])
+  (DELAY 
+    (ABSOLUTE 
+      (IOPATH C Q (208.0:259.0:259.0) (208.0:259.0:259.0))
+    )
+  )
+    (TIMINGCHECK
+      (SETUPHOLD (posedge CE) (posedge C) (63.0:78.0:78.0) (-10.0:-10.0:-10.0))
+      (SETUPHOLD (negedge CE) (posedge C) (63.0:78.0:78.0) (-10.0:-10.0:-10.0))
+      (SETUPHOLD (posedge D) (posedge C) (-54.0:-44.0:-44.0) (177.0:177.0:177.0))
+      (SETUPHOLD (negedge D) (posedge C) (-54.0:-44.0:-44.0) (177.0:177.0:177.0))
+      (SETUPHOLD (posedge R) (posedge C) (250.0:311.0:311.0) (-48.0:-48.0:-48.0))
+      (SETUPHOLD (negedge R) (posedge C) (250.0:311.0:311.0) (-48.0:-48.0:-48.0))
+    )
+)
+(CELL 
+  (CELLTYPE "FDRE")
+  (INSTANCE vga/h_sync_reg\[5\])
+  (DELAY 
+    (ABSOLUTE 
+      (IOPATH C Q (208.0:259.0:259.0) (208.0:259.0:259.0))
+    )
+  )
+    (TIMINGCHECK
+      (SETUPHOLD (posedge CE) (posedge C) (63.0:78.0:78.0) (-10.0:-10.0:-10.0))
+      (SETUPHOLD (negedge CE) (posedge C) (63.0:78.0:78.0) (-10.0:-10.0:-10.0))
+      (SETUPHOLD (posedge D) (posedge C) (-54.0:-44.0:-44.0) (177.0:177.0:177.0))
+      (SETUPHOLD (negedge D) (posedge C) (-54.0:-44.0:-44.0) (177.0:177.0:177.0))
+      (SETUPHOLD (posedge R) (posedge C) (250.0:311.0:311.0) (-48.0:-48.0:-48.0))
+      (SETUPHOLD (negedge R) (posedge C) (250.0:311.0:311.0) (-48.0:-48.0:-48.0))
+    )
+)
+(CELL 
+  (CELLTYPE "FDRE")
+  (INSTANCE vga/h_sync_reg\[6\])
+  (DELAY 
+    (ABSOLUTE 
+      (IOPATH C Q (208.0:259.0:259.0) (208.0:259.0:259.0))
+    )
+  )
+    (TIMINGCHECK
+      (SETUPHOLD (posedge CE) (posedge C) (63.0:78.0:78.0) (-10.0:-10.0:-10.0))
+      (SETUPHOLD (negedge CE) (posedge C) (63.0:78.0:78.0) (-10.0:-10.0:-10.0))
+      (SETUPHOLD (posedge D) (posedge C) (-54.0:-44.0:-44.0) (177.0:177.0:177.0))
+      (SETUPHOLD (negedge D) (posedge C) (-54.0:-44.0:-44.0) (177.0:177.0:177.0))
+      (SETUPHOLD (posedge R) (posedge C) (250.0:311.0:311.0) (-48.0:-48.0:-48.0))
+      (SETUPHOLD (negedge R) (posedge C) (250.0:311.0:311.0) (-48.0:-48.0:-48.0))
+    )
+)
+(CELL 
+  (CELLTYPE "FDRE")
+  (INSTANCE vga/h_sync_reg\[7\])
+  (DELAY 
+    (ABSOLUTE 
+      (IOPATH C Q (208.0:259.0:259.0) (208.0:259.0:259.0))
+    )
+  )
+    (TIMINGCHECK
+      (SETUPHOLD (posedge CE) (posedge C) (63.0:78.0:78.0) (-10.0:-10.0:-10.0))
+      (SETUPHOLD (negedge CE) (posedge C) (63.0:78.0:78.0) (-10.0:-10.0:-10.0))
+      (SETUPHOLD (posedge D) (posedge C) (-54.0:-44.0:-44.0) (177.0:177.0:177.0))
+      (SETUPHOLD (negedge D) (posedge C) (-54.0:-44.0:-44.0) (177.0:177.0:177.0))
+      (SETUPHOLD (posedge R) (posedge C) (250.0:311.0:311.0) (-48.0:-48.0:-48.0))
+      (SETUPHOLD (negedge R) (posedge C) (250.0:311.0:311.0) (-48.0:-48.0:-48.0))
+    )
+)
+(CELL 
+  (CELLTYPE "FDRE")
+  (INSTANCE vga/h_sync_reg\[8\])
+  (DELAY 
+    (ABSOLUTE 
+      (IOPATH C Q (208.0:259.0:259.0) (208.0:259.0:259.0))
+    )
+  )
+    (TIMINGCHECK
+      (SETUPHOLD (posedge CE) (posedge C) (63.0:78.0:78.0) (-10.0:-10.0:-10.0))
+      (SETUPHOLD (negedge CE) (posedge C) (63.0:78.0:78.0) (-10.0:-10.0:-10.0))
+      (SETUPHOLD (posedge D) (posedge C) (-54.0:-44.0:-44.0) (177.0:177.0:177.0))
+      (SETUPHOLD (negedge D) (posedge C) (-54.0:-44.0:-44.0) (177.0:177.0:177.0))
+      (SETUPHOLD (posedge R) (posedge C) (250.0:311.0:311.0) (-48.0:-48.0:-48.0))
+      (SETUPHOLD (negedge R) (posedge C) (250.0:311.0:311.0) (-48.0:-48.0:-48.0))
+    )
+)
+(CELL 
+  (CELLTYPE "FDRE")
+  (INSTANCE vga/h_sync_reg\[9\])
+  (DELAY 
+    (ABSOLUTE 
+      (IOPATH C Q (208.0:259.0:259.0) (208.0:259.0:259.0))
+    )
+  )
+    (TIMINGCHECK
+      (SETUPHOLD (posedge CE) (posedge C) (63.0:78.0:78.0) (-10.0:-10.0:-10.0))
+      (SETUPHOLD (negedge CE) (posedge C) (63.0:78.0:78.0) (-10.0:-10.0:-10.0))
+      (SETUPHOLD (posedge D) (posedge C) (-54.0:-44.0:-44.0) (177.0:177.0:177.0))
+      (SETUPHOLD (negedge D) (posedge C) (-54.0:-44.0:-44.0) (177.0:177.0:177.0))
+      (SETUPHOLD (posedge R) (posedge C) (250.0:311.0:311.0) (-48.0:-48.0:-48.0))
+      (SETUPHOLD (negedge R) (posedge C) (250.0:311.0:311.0) (-48.0:-48.0:-48.0))
+    )
+)
+(CELL 
+  (CELLTYPE "LUT4")
+  (INSTANCE vga/v_sync\[0\]_i_1)
+  (DELAY 
+    (PATHPULSE (50.0))
+    (ABSOLUTE 
+      (IOPATH I3 O (78.0:97.0:97.0) (78.0:97.0:97.0))
+      (IOPATH I2 O (78.0:97.0:97.0) (78.0:97.0:97.0))
+      (IOPATH I1 O (78.0:97.0:97.0) (78.0:97.0:97.0))
+      (IOPATH I0 O (78.0:97.0:97.0) (78.0:97.0:97.0))
+    )
+  )
+)
+(CELL 
+  (CELLTYPE "LUT5")
+  (INSTANCE vga/v_sync\[1\]_i_1)
+  (DELAY 
+    (PATHPULSE (50.0))
+    (ABSOLUTE 
+      (IOPATH I4 O (89.0:111.0:111.0) (89.0:111.0:111.0))
+      (IOPATH I3 O (78.0:97.0:97.0) (78.0:97.0:97.0))
+      (IOPATH I2 O (81.0:101.0:101.0) (81.0:101.0:101.0))
+      (IOPATH I1 O (84.0:105.0:105.0) (84.0:105.0:105.0))
+      (IOPATH I0 O (91.0:113.0:113.0) (91.0:113.0:113.0))
+    )
+  )
+)
+(CELL 
+  (CELLTYPE "LUT6")
+  (INSTANCE vga/v_sync\[2\]_i_1)
+  (DELAY 
+    (PATHPULSE (50.0))
+    (ABSOLUTE 
+      (IOPATH I5 O (78.0:97.0:97.0) (78.0:97.0:97.0))
+      (IOPATH I4 O (78.0:97.0:97.0) (78.0:97.0:97.0))
+      (IOPATH I3 O (78.0:97.0:97.0) (78.0:97.0:97.0))
+      (IOPATH I2 O (78.0:97.0:97.0) (78.0:97.0:97.0))
+      (IOPATH I1 O (78.0:97.0:97.0) (78.0:97.0:97.0))
+      (IOPATH I0 O (78.0:97.0:97.0) (78.0:97.0:97.0))
+    )
+  )
+)
+(CELL 
+  (CELLTYPE "LUT6")
+  (INSTANCE vga/v_sync\[3\]_i_1)
+  (DELAY 
+    (PATHPULSE (50.0))
+    (ABSOLUTE 
+      (IOPATH I5 O (78.0:97.0:97.0) (78.0:97.0:97.0))
+      (IOPATH I4 O (78.0:97.0:97.0) (78.0:97.0:97.0))
+      (IOPATH I3 O (78.0:97.0:97.0) (78.0:97.0:97.0))
+      (IOPATH I2 O (78.0:97.0:97.0) (78.0:97.0:97.0))
+      (IOPATH I1 O (78.0:97.0:97.0) (78.0:97.0:97.0))
+      (IOPATH I0 O (78.0:97.0:97.0) (78.0:97.0:97.0))
+    )
+  )
+)
+(CELL 
+  (CELLTYPE "LUT2")
+  (INSTANCE vga/v_sync\[3\]_i_2)
+  (DELAY 
+    (PATHPULSE (50.0))
+    (ABSOLUTE 
+      (IOPATH I1 O (84.0:105.0:105.0) (84.0:105.0:105.0))
+      (IOPATH I0 O (91.0:113.0:113.0) (91.0:113.0:113.0))
+    )
+  )
+)
+(CELL 
+  (CELLTYPE "LUT5")
+  (INSTANCE vga/v_sync\[4\]_i_1)
+  (DELAY 
+    (PATHPULSE (50.0))
+    (ABSOLUTE 
+      (IOPATH I4 O (78.0:97.0:97.0) (78.0:97.0:97.0))
+      (IOPATH I3 O (78.0:97.0:97.0) (78.0:97.0:97.0))
+      (IOPATH I2 O (78.0:97.0:97.0) (78.0:97.0:97.0))
+      (IOPATH I1 O (78.0:97.0:97.0) (78.0:97.0:97.0))
+      (IOPATH I0 O (78.0:97.0:97.0) (78.0:97.0:97.0))
+    )
+  )
+)
+(CELL 
+  (CELLTYPE "LUT4")
+  (INSTANCE vga/v_sync\[4\]_i_2)
+  (DELAY 
+    (PATHPULSE (50.0))
+    (ABSOLUTE 
+      (IOPATH I3 O (84.0:105.0:105.0) (84.0:105.0:105.0))
+      (IOPATH I2 O (91.0:113.0:113.0) (91.0:113.0:113.0))
+      (IOPATH I1 O (89.0:111.0:111.0) (89.0:111.0:111.0))
+      (IOPATH I0 O (78.0:97.0:97.0) (78.0:97.0:97.0))
+    )
+  )
+)
+(CELL 
+  (CELLTYPE "LUT5")
+  (INSTANCE vga/v_sync\[5\]_i_1)
+  (DELAY 
+    (PATHPULSE (50.0))
+    (ABSOLUTE 
+      (IOPATH I4 O (78.0:97.0:97.0) (78.0:97.0:97.0))
+      (IOPATH I3 O (78.0:97.0:97.0) (78.0:97.0:97.0))
+      (IOPATH I2 O (78.0:97.0:97.0) (78.0:97.0:97.0))
+      (IOPATH I1 O (78.0:97.0:97.0) (78.0:97.0:97.0))
+      (IOPATH I0 O (78.0:97.0:97.0) (78.0:97.0:97.0))
+    )
+  )
+)
+(CELL 
+  (CELLTYPE "LUT6")
+  (INSTANCE vga/v_sync\[6\]_i_1)
+  (DELAY 
+    (PATHPULSE (50.0))
+    (ABSOLUTE 
+      (IOPATH I5 O (78.0:97.0:97.0) (78.0:97.0:97.0))
+      (IOPATH I4 O (78.0:97.0:97.0) (78.0:97.0:97.0))
+      (IOPATH I3 O (78.0:97.0:97.0) (78.0:97.0:97.0))
+      (IOPATH I2 O (78.0:97.0:97.0) (78.0:97.0:97.0))
+      (IOPATH I1 O (78.0:97.0:97.0) (78.0:97.0:97.0))
+      (IOPATH I0 O (78.0:97.0:97.0) (78.0:97.0:97.0))
+    )
+  )
+)
+(CELL 
+  (CELLTYPE "LUT6")
+  (INSTANCE vga/v_sync\[7\]_i_1)
+  (DELAY 
+    (PATHPULSE (50.0))
+    (ABSOLUTE 
+      (IOPATH I5 O (78.0:97.0:97.0) (78.0:97.0:97.0))
+      (IOPATH I4 O (78.0:97.0:97.0) (78.0:97.0:97.0))
+      (IOPATH I3 O (78.0:97.0:97.0) (78.0:97.0:97.0))
+      (IOPATH I2 O (78.0:97.0:97.0) (78.0:97.0:97.0))
+      (IOPATH I1 O (78.0:97.0:97.0) (78.0:97.0:97.0))
+      (IOPATH I0 O (78.0:97.0:97.0) (78.0:97.0:97.0))
+    )
+  )
+)
+(CELL 
+  (CELLTYPE "LUT2")
+  (INSTANCE vga/v_sync\[7\]_i_2)
+  (DELAY 
+    (PATHPULSE (50.0))
+    (ABSOLUTE 
+      (IOPATH I1 O (78.0:97.0:97.0) (78.0:97.0:97.0))
+      (IOPATH I0 O (78.0:97.0:97.0) (78.0:97.0:97.0))
+    )
+  )
+)
+(CELL 
+  (CELLTYPE "LUT6")
+  (INSTANCE vga/v_sync\[8\]_i_1)
+  (DELAY 
+    (PATHPULSE (50.0))
+    (ABSOLUTE 
+      (IOPATH I5 O (78.0:97.0:97.0) (78.0:97.0:97.0))
+      (IOPATH I4 O (78.0:97.0:97.0) (78.0:97.0:97.0))
+      (IOPATH I3 O (78.0:97.0:97.0) (78.0:97.0:97.0))
+      (IOPATH I2 O (78.0:97.0:97.0) (78.0:97.0:97.0))
+      (IOPATH I1 O (78.0:97.0:97.0) (78.0:97.0:97.0))
+      (IOPATH I0 O (78.0:97.0:97.0) (78.0:97.0:97.0))
+    )
+  )
+)
+(CELL 
+  (CELLTYPE "LUT3")
+  (INSTANCE vga/v_sync\[8\]_i_2)
+  (DELAY 
+    (PATHPULSE (50.0))
+    (ABSOLUTE 
+      (IOPATH I2 O (78.0:97.0:97.0) (78.0:97.0:97.0))
+      (IOPATH I1 O (78.0:97.0:97.0) (78.0:97.0:97.0))
+      (IOPATH I0 O (78.0:97.0:97.0) (78.0:97.0:97.0))
+    )
+  )
+)
+(CELL 
+  (CELLTYPE "LUT6")
+  (INSTANCE vga/v_sync\[9\]_i_1)
+  (DELAY 
+    (PATHPULSE (50.0))
+    (ABSOLUTE 
+      (IOPATH I5 O (78.0:97.0:97.0) (78.0:97.0:97.0))
+      (IOPATH I4 O (78.0:97.0:97.0) (78.0:97.0:97.0))
+      (IOPATH I3 O (78.0:97.0:97.0) (78.0:97.0:97.0))
+      (IOPATH I2 O (78.0:97.0:97.0) (78.0:97.0:97.0))
+      (IOPATH I1 O (78.0:97.0:97.0) (78.0:97.0:97.0))
+      (IOPATH I0 O (78.0:97.0:97.0) (78.0:97.0:97.0))
+    )
+  )
+)
+(CELL 
+  (CELLTYPE "LUT6")
+  (INSTANCE vga/v_sync\[9\]_i_2)
+  (DELAY 
+    (PATHPULSE (50.0))
+    (ABSOLUTE 
+      (IOPATH I5 O (78.0:97.0:97.0) (78.0:97.0:97.0))
+      (IOPATH I4 O (78.0:97.0:97.0) (78.0:97.0:97.0))
+      (IOPATH I3 O (78.0:97.0:97.0) (78.0:97.0:97.0))
+      (IOPATH I2 O (78.0:97.0:97.0) (78.0:97.0:97.0))
+      (IOPATH I1 O (78.0:97.0:97.0) (78.0:97.0:97.0))
+      (IOPATH I0 O (78.0:97.0:97.0) (78.0:97.0:97.0))
+    )
+  )
+)
+(CELL 
+  (CELLTYPE "LUT4")
+  (INSTANCE vga/v_sync\[9\]_i_3)
+  (DELAY 
+    (PATHPULSE (50.0))
+    (ABSOLUTE 
+      (IOPATH I3 O (84.0:105.0:105.0) (84.0:105.0:105.0))
+      (IOPATH I2 O (91.0:113.0:113.0) (91.0:113.0:113.0))
+      (IOPATH I1 O (89.0:111.0:111.0) (89.0:111.0:111.0))
+      (IOPATH I0 O (78.0:97.0:97.0) (78.0:97.0:97.0))
+    )
+  )
+)
+(CELL 
+  (CELLTYPE "LUT5")
+  (INSTANCE vga/v_sync\[9\]_i_4)
+  (DELAY 
+    (PATHPULSE (50.0))
+    (ABSOLUTE 
+      (IOPATH I4 O (78.0:97.0:97.0) (78.0:97.0:97.0))
+      (IOPATH I3 O (78.0:97.0:97.0) (78.0:97.0:97.0))
+      (IOPATH I2 O (78.0:97.0:97.0) (78.0:97.0:97.0))
+      (IOPATH I1 O (78.0:97.0:97.0) (78.0:97.0:97.0))
+      (IOPATH I0 O (78.0:97.0:97.0) (78.0:97.0:97.0))
+    )
+  )
+)
+(CELL 
+  (CELLTYPE "FDRE")
+  (INSTANCE vga/v_sync_reg\[0\])
+  (DELAY 
+    (ABSOLUTE 
+      (IOPATH C Q (208.0:259.0:259.0) (208.0:259.0:259.0))
+    )
+  )
+    (TIMINGCHECK
+      (SETUPHOLD (posedge CE) (posedge C) (63.0:78.0:78.0) (-10.0:-10.0:-10.0))
+      (SETUPHOLD (negedge CE) (posedge C) (63.0:78.0:78.0) (-10.0:-10.0:-10.0))
+      (SETUPHOLD (posedge D) (posedge C) (-54.0:-44.0:-44.0) (177.0:177.0:177.0))
+      (SETUPHOLD (negedge D) (posedge C) (-54.0:-44.0:-44.0) (177.0:177.0:177.0))
+      (SETUPHOLD (posedge R) (posedge C) (250.0:311.0:311.0) (-48.0:-48.0:-48.0))
+      (SETUPHOLD (negedge R) (posedge C) (250.0:311.0:311.0) (-48.0:-48.0:-48.0))
+    )
+)
+(CELL 
+  (CELLTYPE "FDRE")
+  (INSTANCE vga/v_sync_reg\[1\])
+  (DELAY 
+    (ABSOLUTE 
+      (IOPATH C Q (208.0:259.0:259.0) (208.0:259.0:259.0))
+    )
+  )
+    (TIMINGCHECK
+      (SETUPHOLD (posedge CE) (posedge C) (63.0:78.0:78.0) (-10.0:-10.0:-10.0))
+      (SETUPHOLD (negedge CE) (posedge C) (63.0:78.0:78.0) (-10.0:-10.0:-10.0))
+      (SETUPHOLD (posedge D) (posedge C) (-54.0:-44.0:-44.0) (177.0:177.0:177.0))
+      (SETUPHOLD (negedge D) (posedge C) (-54.0:-44.0:-44.0) (177.0:177.0:177.0))
+      (SETUPHOLD (posedge R) (posedge C) (250.0:311.0:311.0) (-48.0:-48.0:-48.0))
+      (SETUPHOLD (negedge R) (posedge C) (250.0:311.0:311.0) (-48.0:-48.0:-48.0))
+    )
+)
+(CELL 
+  (CELLTYPE "FDRE")
+  (INSTANCE vga/v_sync_reg\[2\])
+  (DELAY 
+    (ABSOLUTE 
+      (IOPATH C Q (208.0:259.0:259.0) (208.0:259.0:259.0))
+    )
+  )
+    (TIMINGCHECK
+      (SETUPHOLD (posedge CE) (posedge C) (63.0:78.0:78.0) (-10.0:-10.0:-10.0))
+      (SETUPHOLD (negedge CE) (posedge C) (63.0:78.0:78.0) (-10.0:-10.0:-10.0))
+      (SETUPHOLD (posedge D) (posedge C) (-54.0:-44.0:-44.0) (177.0:177.0:177.0))
+      (SETUPHOLD (negedge D) (posedge C) (-54.0:-44.0:-44.0) (177.0:177.0:177.0))
+      (SETUPHOLD (posedge R) (posedge C) (250.0:311.0:311.0) (-48.0:-48.0:-48.0))
+      (SETUPHOLD (negedge R) (posedge C) (250.0:311.0:311.0) (-48.0:-48.0:-48.0))
+    )
+)
+(CELL 
+  (CELLTYPE "FDRE")
+  (INSTANCE vga/v_sync_reg\[3\])
+  (DELAY 
+    (ABSOLUTE 
+      (IOPATH C Q (208.0:259.0:259.0) (208.0:259.0:259.0))
+    )
+  )
+    (TIMINGCHECK
+      (SETUPHOLD (posedge CE) (posedge C) (63.0:78.0:78.0) (-10.0:-10.0:-10.0))
+      (SETUPHOLD (negedge CE) (posedge C) (63.0:78.0:78.0) (-10.0:-10.0:-10.0))
+      (SETUPHOLD (posedge D) (posedge C) (-54.0:-44.0:-44.0) (177.0:177.0:177.0))
+      (SETUPHOLD (negedge D) (posedge C) (-54.0:-44.0:-44.0) (177.0:177.0:177.0))
+      (SETUPHOLD (posedge R) (posedge C) (250.0:311.0:311.0) (-48.0:-48.0:-48.0))
+      (SETUPHOLD (negedge R) (posedge C) (250.0:311.0:311.0) (-48.0:-48.0:-48.0))
+    )
+)
+(CELL 
+  (CELLTYPE "FDRE")
+  (INSTANCE vga/v_sync_reg\[4\])
+  (DELAY 
+    (ABSOLUTE 
+      (IOPATH C Q (208.0:259.0:259.0) (208.0:259.0:259.0))
+    )
+  )
+    (TIMINGCHECK
+      (SETUPHOLD (posedge CE) (posedge C) (63.0:78.0:78.0) (-10.0:-10.0:-10.0))
+      (SETUPHOLD (negedge CE) (posedge C) (63.0:78.0:78.0) (-10.0:-10.0:-10.0))
+      (SETUPHOLD (posedge D) (posedge C) (-54.0:-44.0:-44.0) (177.0:177.0:177.0))
+      (SETUPHOLD (negedge D) (posedge C) (-54.0:-44.0:-44.0) (177.0:177.0:177.0))
+      (SETUPHOLD (posedge R) (posedge C) (250.0:311.0:311.0) (-48.0:-48.0:-48.0))
+      (SETUPHOLD (negedge R) (posedge C) (250.0:311.0:311.0) (-48.0:-48.0:-48.0))
+    )
+)
+(CELL 
+  (CELLTYPE "FDRE")
+  (INSTANCE vga/v_sync_reg\[5\])
+  (DELAY 
+    (ABSOLUTE 
+      (IOPATH C Q (208.0:259.0:259.0) (208.0:259.0:259.0))
+    )
+  )
+    (TIMINGCHECK
+      (SETUPHOLD (posedge CE) (posedge C) (63.0:78.0:78.0) (-10.0:-10.0:-10.0))
+      (SETUPHOLD (negedge CE) (posedge C) (63.0:78.0:78.0) (-10.0:-10.0:-10.0))
+      (SETUPHOLD (posedge D) (posedge C) (-54.0:-44.0:-44.0) (177.0:177.0:177.0))
+      (SETUPHOLD (negedge D) (posedge C) (-54.0:-44.0:-44.0) (177.0:177.0:177.0))
+      (SETUPHOLD (posedge R) (posedge C) (250.0:311.0:311.0) (-48.0:-48.0:-48.0))
+      (SETUPHOLD (negedge R) (posedge C) (250.0:311.0:311.0) (-48.0:-48.0:-48.0))
+    )
+)
+(CELL 
+  (CELLTYPE "FDRE")
+  (INSTANCE vga/v_sync_reg\[6\])
+  (DELAY 
+    (ABSOLUTE 
+      (IOPATH C Q (208.0:259.0:259.0) (208.0:259.0:259.0))
+    )
+  )
+    (TIMINGCHECK
+      (SETUPHOLD (posedge CE) (posedge C) (63.0:78.0:78.0) (-10.0:-10.0:-10.0))
+      (SETUPHOLD (negedge CE) (posedge C) (63.0:78.0:78.0) (-10.0:-10.0:-10.0))
+      (SETUPHOLD (posedge D) (posedge C) (-54.0:-44.0:-44.0) (177.0:177.0:177.0))
+      (SETUPHOLD (negedge D) (posedge C) (-54.0:-44.0:-44.0) (177.0:177.0:177.0))
+      (SETUPHOLD (posedge R) (posedge C) (250.0:311.0:311.0) (-48.0:-48.0:-48.0))
+      (SETUPHOLD (negedge R) (posedge C) (250.0:311.0:311.0) (-48.0:-48.0:-48.0))
+    )
+)
+(CELL 
+  (CELLTYPE "FDRE")
+  (INSTANCE vga/v_sync_reg\[7\])
+  (DELAY 
+    (ABSOLUTE 
+      (IOPATH C Q (208.0:259.0:259.0) (208.0:259.0:259.0))
+    )
+  )
+    (TIMINGCHECK
+      (SETUPHOLD (posedge CE) (posedge C) (63.0:78.0:78.0) (-10.0:-10.0:-10.0))
+      (SETUPHOLD (negedge CE) (posedge C) (63.0:78.0:78.0) (-10.0:-10.0:-10.0))
+      (SETUPHOLD (posedge D) (posedge C) (-54.0:-44.0:-44.0) (177.0:177.0:177.0))
+      (SETUPHOLD (negedge D) (posedge C) (-54.0:-44.0:-44.0) (177.0:177.0:177.0))
+      (SETUPHOLD (posedge R) (posedge C) (250.0:311.0:311.0) (-48.0:-48.0:-48.0))
+      (SETUPHOLD (negedge R) (posedge C) (250.0:311.0:311.0) (-48.0:-48.0:-48.0))
+    )
+)
+(CELL 
+  (CELLTYPE "FDRE")
+  (INSTANCE vga/v_sync_reg\[8\])
+  (DELAY 
+    (ABSOLUTE 
+      (IOPATH C Q (208.0:259.0:259.0) (208.0:259.0:259.0))
+    )
+  )
+    (TIMINGCHECK
+      (SETUPHOLD (posedge CE) (posedge C) (63.0:78.0:78.0) (-10.0:-10.0:-10.0))
+      (SETUPHOLD (negedge CE) (posedge C) (63.0:78.0:78.0) (-10.0:-10.0:-10.0))
+      (SETUPHOLD (posedge D) (posedge C) (-54.0:-44.0:-44.0) (177.0:177.0:177.0))
+      (SETUPHOLD (negedge D) (posedge C) (-54.0:-44.0:-44.0) (177.0:177.0:177.0))
+      (SETUPHOLD (posedge R) (posedge C) (250.0:311.0:311.0) (-48.0:-48.0:-48.0))
+      (SETUPHOLD (negedge R) (posedge C) (250.0:311.0:311.0) (-48.0:-48.0:-48.0))
+    )
+)
+(CELL 
+  (CELLTYPE "FDRE")
+  (INSTANCE vga/v_sync_reg\[9\])
+  (DELAY 
+    (ABSOLUTE 
+      (IOPATH C Q (208.0:259.0:259.0) (208.0:259.0:259.0))
+    )
+  )
+    (TIMINGCHECK
+      (SETUPHOLD (posedge CE) (posedge C) (63.0:78.0:78.0) (-10.0:-10.0:-10.0))
+      (SETUPHOLD (negedge CE) (posedge C) (63.0:78.0:78.0) (-10.0:-10.0:-10.0))
+      (SETUPHOLD (posedge D) (posedge C) (-54.0:-44.0:-44.0) (177.0:177.0:177.0))
+      (SETUPHOLD (negedge D) (posedge C) (-54.0:-44.0:-44.0) (177.0:177.0:177.0))
+      (SETUPHOLD (posedge R) (posedge C) (250.0:311.0:311.0) (-48.0:-48.0:-48.0))
+      (SETUPHOLD (negedge R) (posedge C) (250.0:311.0:311.0) (-48.0:-48.0:-48.0))
+    )
+)
+(CELL 
+  (CELLTYPE "LUT6")
+  (INSTANCE vga/x_OBUF_inst_i_1)
+  (DELAY 
+    (PATHPULSE (50.0))
+    (ABSOLUTE 
+      (IOPATH I5 O (78.0:97.0:97.0) (78.0:97.0:97.0))
+      (IOPATH I4 O (78.0:97.0:97.0) (78.0:97.0:97.0))
+      (IOPATH I3 O (78.0:97.0:97.0) (78.0:97.0:97.0))
+      (IOPATH I2 O (78.0:97.0:97.0) (78.0:97.0:97.0))
+      (IOPATH I1 O (78.0:97.0:97.0) (78.0:97.0:97.0))
+      (IOPATH I0 O (78.0:97.0:97.0) (78.0:97.0:97.0))
+    )
+  )
+)
+(CELL 
+  (CELLTYPE "LUT6")
+  (INSTANCE vga/y_OBUF_inst_i_1)
+  (DELAY 
+    (PATHPULSE (50.0))
+    (ABSOLUTE 
+      (IOPATH I5 O (78.0:97.0:97.0) (78.0:97.0:97.0))
+      (IOPATH I4 O (78.0:97.0:97.0) (78.0:97.0:97.0))
+      (IOPATH I3 O (78.0:97.0:97.0) (78.0:97.0:97.0))
+      (IOPATH I2 O (78.0:97.0:97.0) (78.0:97.0:97.0))
+      (IOPATH I1 O (78.0:97.0:97.0) (78.0:97.0:97.0))
+      (IOPATH I0 O (78.0:97.0:97.0) (78.0:97.0:97.0))
+    )
+  )
+)
+(CELL 
+  (CELLTYPE "OBUF")
+  (INSTANCE vgaBlue_OBUF\[0\]_inst)
+  (DELAY 
+    (PATHPULSE (50.0))
+    (ABSOLUTE 
+      (IOPATH I O (2913.1:3116.7:3116.7) (2913.1:3116.7:3116.7))
+    )
+  )
+)
+(CELL 
+  (CELLTYPE "OBUF")
+  (INSTANCE vgaBlue_OBUF\[1\]_inst)
+  (DELAY 
+    (PATHPULSE (50.0))
+    (ABSOLUTE 
+      (IOPATH I O (2921.1:3124.8:3124.8) (2921.1:3124.8:3124.8))
+    )
+  )
+)
+(CELL 
+  (CELLTYPE "OBUF")
+  (INSTANCE vgaBlue_OBUF\[2\]_inst)
+  (DELAY 
+    (PATHPULSE (50.0))
+    (ABSOLUTE 
+      (IOPATH I O (2936.4:3140.2:3140.2) (2936.4:3140.2:3140.2))
+    )
+  )
+)
+(CELL 
+  (CELLTYPE "OBUF")
+  (INSTANCE vgaBlue_OBUF\[3\]_inst)
+  (DELAY 
+    (PATHPULSE (50.0))
+    (ABSOLUTE 
+      (IOPATH I O (2942.3:3146.1:3146.1) (2942.3:3146.1:3146.1))
+    )
+  )
+)
+(CELL 
+  (CELLTYPE "OBUF")
+  (INSTANCE vgaGreen_OBUF\[0\]_inst)
+  (DELAY 
+    (PATHPULSE (50.0))
+    (ABSOLUTE 
+      (IOPATH I O (2938.5:3142.3:3142.3) (2938.5:3142.3:3142.3))
+    )
+  )
+)
+(CELL 
+  (CELLTYPE "OBUF")
+  (INSTANCE vgaGreen_OBUF\[1\]_inst)
+  (DELAY 
+    (PATHPULSE (50.0))
+    (ABSOLUTE 
+      (IOPATH I O (2923.2:3126.9:3126.9) (2923.2:3126.9:3126.9))
+    )
+  )
+)
+(CELL 
+  (CELLTYPE "OBUF")
+  (INSTANCE vgaGreen_OBUF\[2\]_inst)
+  (DELAY 
+    (PATHPULSE (50.0))
+    (ABSOLUTE 
+      (IOPATH I O (2946.6:3150.5:3150.5) (2946.6:3150.5:3150.5))
+    )
+  )
+)
+(CELL 
+  (CELLTYPE "OBUF")
+  (INSTANCE vgaGreen_OBUF\[3\]_inst)
+  (DELAY 
+    (PATHPULSE (50.0))
+    (ABSOLUTE 
+      (IOPATH I O (2948.0:3151.9:3151.9) (2948.0:3151.9:3151.9))
+    )
+  )
+)
+(CELL 
+  (CELLTYPE "OBUF")
+  (INSTANCE vgaRed_OBUF\[0\]_inst)
+  (DELAY 
+    (PATHPULSE (50.0))
+    (ABSOLUTE 
+      (IOPATH I O (2941.3:3145.1:3145.1) (2941.3:3145.1:3145.1))
+    )
+  )
+)
+(CELL 
+  (CELLTYPE "OBUF")
+  (INSTANCE vgaRed_OBUF\[1\]_inst)
+  (DELAY 
+    (PATHPULSE (50.0))
+    (ABSOLUTE 
+      (IOPATH I O (2936.9:3140.7:3140.7) (2936.9:3140.7:3140.7))
+    )
+  )
+)
+(CELL 
+  (CELLTYPE "OBUF")
+  (INSTANCE vgaRed_OBUF\[2\]_inst)
+  (DELAY 
+    (PATHPULSE (50.0))
+    (ABSOLUTE 
+      (IOPATH I O (2941.5:3145.3:3145.3) (2941.5:3145.3:3145.3))
+    )
+  )
+)
+(CELL 
+  (CELLTYPE "OBUF")
+  (INSTANCE vgaRed_OBUF\[3\]_inst)
+  (DELAY 
+    (PATHPULSE (50.0))
+    (ABSOLUTE 
+      (IOPATH I O (2920.3:3123.9:3123.9) (2920.3:3123.9:3123.9))
+    )
+  )
+)
+(CELL 
+  (CELLTYPE "OBUF")
+  (INSTANCE x_OBUF_inst)
+  (DELAY 
+    (PATHPULSE (50.0))
+    (ABSOLUTE 
+      (IOPATH I O (2048.3:2207.8:2207.8) (2048.3:2207.8:2207.8))
+    )
+  )
+)
+(CELL 
+  (CELLTYPE "OBUF")
+  (INSTANCE y_OBUF_inst)
+  (DELAY 
+    (PATHPULSE (50.0))
+    (ABSOLUTE 
+      (IOPATH I O (2048.3:2207.8:2207.8) (2048.3:2207.8:2207.8))
+    )
+  )
+)
+(CELL 
+    (CELLTYPE "top")
+    (INSTANCE )
+    (DELAY
+      (ABSOLUTE
+      (INTERCONNECT btnC_IBUF_inst/O led_OBUF\[0\]_inst_i_1/I1 (542.7:571.2:571.2) (542.7:571.2:571.2))
+      (INTERCONNECT btnC_IBUF_inst/O led_OBUF\[10\]_inst_i_1/I1 (542.7:571.2:571.2) (542.7:571.2:571.2))
+      (INTERCONNECT btnC_IBUF_inst/O led_OBUF\[11\]_inst_i_1/I1 (542.7:571.2:571.2) (542.7:571.2:571.2))
+      (INTERCONNECT btnC_IBUF_inst/O led_OBUF\[12\]_inst_i_1/I1 (542.7:571.2:571.2) (542.7:571.2:571.2))
+      (INTERCONNECT btnC_IBUF_inst/O led_OBUF\[13\]_inst_i_1/I1 (542.7:571.2:571.2) (542.7:571.2:571.2))
+      (INTERCONNECT btnC_IBUF_inst/O led_OBUF\[14\]_inst_i_1/I1 (542.7:571.2:571.2) (542.7:571.2:571.2))
+      (INTERCONNECT btnC_IBUF_inst/O led_OBUF\[15\]_inst_i_1/I1 (542.7:571.2:571.2) (542.7:571.2:571.2))
+      (INTERCONNECT btnC_IBUF_inst/O led_OBUF\[1\]_inst_i_1/I1 (542.7:571.2:571.2) (542.7:571.2:571.2))
+      (INTERCONNECT btnC_IBUF_inst/O led_OBUF\[2\]_inst_i_1/I1 (542.7:571.2:571.2) (542.7:571.2:571.2))
+      (INTERCONNECT btnC_IBUF_inst/O led_OBUF\[3\]_inst_i_1/I1 (542.7:571.2:571.2) (542.7:571.2:571.2))
+      (INTERCONNECT btnC_IBUF_inst/O led_OBUF\[4\]_inst_i_1/I1 (542.7:571.2:571.2) (542.7:571.2:571.2))
+      (INTERCONNECT btnC_IBUF_inst/O led_OBUF\[5\]_inst_i_1/I1 (542.7:571.2:571.2) (542.7:571.2:571.2))
+      (INTERCONNECT btnC_IBUF_inst/O led_OBUF\[6\]_inst_i_1/I1 (542.7:571.2:571.2) (542.7:571.2:571.2))
+      (INTERCONNECT btnC_IBUF_inst/O led_OBUF\[7\]_inst_i_1/I1 (542.7:571.2:571.2) (542.7:571.2:571.2))
+      (INTERCONNECT btnC_IBUF_inst/O led_OBUF\[8\]_inst_i_1/I1 (542.7:571.2:571.2) (542.7:571.2:571.2))
+      (INTERCONNECT btnC_IBUF_inst/O led_OBUF\[9\]_inst_i_1/I1 (542.7:571.2:571.2) (542.7:571.2:571.2))
+      (INTERCONNECT btnC_IBUF_inst/O vga/h_sync_reg\[0\]/R (597.7:640.2:640.2) (597.7:640.2:640.2))
+      (INTERCONNECT btnC_IBUF_inst/O vga/h_sync_reg\[1\]/R (597.7:640.2:640.2) (597.7:640.2:640.2))
+      (INTERCONNECT btnC_IBUF_inst/O vga/h_sync_reg\[2\]/R (597.7:640.2:640.2) (597.7:640.2:640.2))
+      (INTERCONNECT btnC_IBUF_inst/O vga/h_sync_reg\[3\]/R (597.7:640.2:640.2) (597.7:640.2:640.2))
+      (INTERCONNECT btnC_IBUF_inst/O vga/h_sync_reg\[4\]/R (597.7:640.2:640.2) (597.7:640.2:640.2))
+      (INTERCONNECT btnC_IBUF_inst/O vga/h_sync_reg\[5\]/R (597.7:640.2:640.2) (597.7:640.2:640.2))
+      (INTERCONNECT btnC_IBUF_inst/O vga/h_sync_reg\[6\]/R (597.7:640.2:640.2) (597.7:640.2:640.2))
+      (INTERCONNECT btnC_IBUF_inst/O vga/h_sync_reg\[7\]/R (597.7:640.2:640.2) (597.7:640.2:640.2))
+      (INTERCONNECT btnC_IBUF_inst/O vga/h_sync_reg\[8\]/R (597.7:640.2:640.2) (597.7:640.2:640.2))
+      (INTERCONNECT btnC_IBUF_inst/O vga/h_sync_reg\[9\]/R (597.7:640.2:640.2) (597.7:640.2:640.2))
+      (INTERCONNECT btnC_IBUF_inst/O vga/v_sync_reg\[0\]/R (597.7:640.2:640.2) (597.7:640.2:640.2))
+      (INTERCONNECT btnC_IBUF_inst/O vga/v_sync_reg\[1\]/R (597.7:640.2:640.2) (597.7:640.2:640.2))
+      (INTERCONNECT btnC_IBUF_inst/O vga/v_sync_reg\[2\]/R (597.7:640.2:640.2) (597.7:640.2:640.2))
+      (INTERCONNECT btnC_IBUF_inst/O vga/v_sync_reg\[3\]/R (597.7:640.2:640.2) (597.7:640.2:640.2))
+      (INTERCONNECT btnC_IBUF_inst/O vga/v_sync_reg\[4\]/R (597.7:640.2:640.2) (597.7:640.2:640.2))
+      (INTERCONNECT btnC_IBUF_inst/O vga/v_sync_reg\[5\]/R (597.7:640.2:640.2) (597.7:640.2:640.2))
+      (INTERCONNECT btnC_IBUF_inst/O vga/v_sync_reg\[6\]/R (597.7:640.2:640.2) (597.7:640.2:640.2))
+      (INTERCONNECT btnC_IBUF_inst/O vga/v_sync_reg\[7\]/R (597.7:640.2:640.2) (597.7:640.2:640.2))
+      (INTERCONNECT btnC_IBUF_inst/O vga/v_sync_reg\[8\]/R (597.7:640.2:640.2) (597.7:640.2:640.2))
+      (INTERCONNECT btnC_IBUF_inst/O vga/v_sync_reg\[9\]/R (597.7:640.2:640.2) (597.7:640.2:640.2))
+      (INTERCONNECT clk_IBUF_BUFG_inst/O cnt_reg\[13\]/C (439.0:584.0:584.0) (439.0:584.0:584.0))
+      (INTERCONNECT clk_IBUF_BUFG_inst/O cnt_reg\[14\]/C (439.0:584.0:584.0) (439.0:584.0:584.0))
+      (INTERCONNECT clk_IBUF_BUFG_inst/O cnt_reg\[15\]/C (439.0:584.0:584.0) (439.0:584.0:584.0))
+      (INTERCONNECT clk_IBUF_BUFG_inst/O px_strobe_reg/C (439.0:584.0:584.0) (439.0:584.0:584.0))
+      (INTERCONNECT clk_IBUF_BUFG_inst/O vga/h_sync_reg\[0\]/C (439.0:584.0:584.0) (439.0:584.0:584.0))
+      (INTERCONNECT clk_IBUF_BUFG_inst/O vga/h_sync_reg\[1\]/C (439.0:584.0:584.0) (439.0:584.0:584.0))
+      (INTERCONNECT clk_IBUF_BUFG_inst/O vga/h_sync_reg\[2\]/C (439.0:584.0:584.0) (439.0:584.0:584.0))
+      (INTERCONNECT clk_IBUF_BUFG_inst/O vga/h_sync_reg\[3\]/C (439.0:584.0:584.0) (439.0:584.0:584.0))
+      (INTERCONNECT clk_IBUF_BUFG_inst/O vga/h_sync_reg\[4\]/C (439.0:584.0:584.0) (439.0:584.0:584.0))
+      (INTERCONNECT clk_IBUF_BUFG_inst/O vga/h_sync_reg\[5\]/C (439.0:584.0:584.0) (439.0:584.0:584.0))
+      (INTERCONNECT clk_IBUF_BUFG_inst/O vga/h_sync_reg\[6\]/C (439.0:584.0:584.0) (439.0:584.0:584.0))
+      (INTERCONNECT clk_IBUF_BUFG_inst/O vga/h_sync_reg\[7\]/C (439.0:584.0:584.0) (439.0:584.0:584.0))
+      (INTERCONNECT clk_IBUF_BUFG_inst/O vga/h_sync_reg\[8\]/C (439.0:584.0:584.0) (439.0:584.0:584.0))
+      (INTERCONNECT clk_IBUF_BUFG_inst/O vga/h_sync_reg\[9\]/C (439.0:584.0:584.0) (439.0:584.0:584.0))
+      (INTERCONNECT clk_IBUF_BUFG_inst/O vga/v_sync_reg\[0\]/C (439.0:584.0:584.0) (439.0:584.0:584.0))
+      (INTERCONNECT clk_IBUF_BUFG_inst/O vga/v_sync_reg\[1\]/C (439.0:584.0:584.0) (439.0:584.0:584.0))
+      (INTERCONNECT clk_IBUF_BUFG_inst/O vga/v_sync_reg\[2\]/C (439.0:584.0:584.0) (439.0:584.0:584.0))
+      (INTERCONNECT clk_IBUF_BUFG_inst/O vga/v_sync_reg\[3\]/C (439.0:584.0:584.0) (439.0:584.0:584.0))
+      (INTERCONNECT clk_IBUF_BUFG_inst/O vga/v_sync_reg\[4\]/C (439.0:584.0:584.0) (439.0:584.0:584.0))
+      (INTERCONNECT clk_IBUF_BUFG_inst/O vga/v_sync_reg\[5\]/C (439.0:584.0:584.0) (439.0:584.0:584.0))
+      (INTERCONNECT clk_IBUF_BUFG_inst/O vga/v_sync_reg\[6\]/C (439.0:584.0:584.0) (439.0:584.0:584.0))
+      (INTERCONNECT clk_IBUF_BUFG_inst/O vga/v_sync_reg\[7\]/C (439.0:584.0:584.0) (439.0:584.0:584.0))
+      (INTERCONNECT clk_IBUF_BUFG_inst/O vga/v_sync_reg\[8\]/C (439.0:584.0:584.0) (439.0:584.0:584.0))
+      (INTERCONNECT clk_IBUF_BUFG_inst/O vga/v_sync_reg\[9\]/C (439.0:584.0:584.0) (439.0:584.0:584.0))
+      (INTERCONNECT clk_IBUF_inst/O clk_IBUF_BUFG_inst/I (542.7:571.2:571.2) (542.7:571.2:571.2))
+      (INTERCONNECT cnt\[15\]_i_2/O cnt_reg\[15\]_i_1/S[1] (14.0:18.0:18.0) (14.0:18.0:18.0))
+      (INTERCONNECT cnt_reg\[13\]/Q cnt_reg\[15\]_i_1/S[0] (425.5:466.0:466.0) (425.5:466.0:466.0))
+      (INTERCONNECT cnt_reg\[14\]/Q cnt_reg\[15\]_i_1/DI[1] (117.8:124.0:124.0) (117.8:124.0:124.0))
+      (INTERCONNECT cnt_reg\[14\]/Q cnt\[15\]_i_2/I0 (207.1:218.0:218.0) (207.1:218.0:218.0))
+      (INTERCONNECT cnt_reg\[15\]/Q cnt_reg\[15\]_i_1/S[2] (630.7:682.0:682.0) (630.7:682.0:682.0))
+      (INTERCONNECT cnt_reg\[15\]_i_1/CO[3] px_strobe_reg/D (192.0:239.0:239.0) (192.0:239.0:239.0))
+      (INTERCONNECT cnt_reg\[15\]_i_1/O[2] cnt_reg\[15\]/D (43.0:54.0:54.0) (43.0:54.0:54.0))
+      (INTERCONNECT cnt_reg\[15\]_i_1/O[1] cnt_reg\[14\]/D (43.0:54.0:54.0) (43.0:54.0:54.0))
+      (INTERCONNECT cnt_reg\[15\]_i_1/O[0] cnt_reg\[13\]/D (43.0:54.0:54.0) (43.0:54.0:54.0))
+      (INTERCONNECT led_OBUF\[0\]_inst_i_1/O led_OBUF\[0\]_inst/I (543.7:572.2:572.2) (543.7:572.2:572.2))
+      (INTERCONNECT led_OBUF\[10\]_inst_i_1/O led_OBUF\[10\]_inst/I (543.7:572.2:572.2) (543.7:572.2:572.2))
+      (INTERCONNECT led_OBUF\[11\]_inst_i_1/O led_OBUF\[11\]_inst/I (543.7:572.2:572.2) (543.7:572.2:572.2))
+      (INTERCONNECT led_OBUF\[12\]_inst_i_1/O led_OBUF\[12\]_inst/I (543.7:572.2:572.2) (543.7:572.2:572.2))
+      (INTERCONNECT led_OBUF\[13\]_inst_i_1/O led_OBUF\[13\]_inst/I (543.7:572.2:572.2) (543.7:572.2:572.2))
+      (INTERCONNECT led_OBUF\[14\]_inst_i_1/O led_OBUF\[14\]_inst/I (543.7:572.2:572.2) (543.7:572.2:572.2))
+      (INTERCONNECT led_OBUF\[15\]_inst_i_1/O led_OBUF\[15\]_inst/I (543.7:572.2:572.2) (543.7:572.2:572.2))
+      (INTERCONNECT led_OBUF\[1\]_inst_i_1/O led_OBUF\[1\]_inst/I (543.7:572.2:572.2) (543.7:572.2:572.2))
+      (INTERCONNECT led_OBUF\[2\]_inst_i_1/O led_OBUF\[2\]_inst/I (543.7:572.2:572.2) (543.7:572.2:572.2))
+      (INTERCONNECT led_OBUF\[3\]_inst_i_1/O led_OBUF\[3\]_inst/I (543.7:572.2:572.2) (543.7:572.2:572.2))
+      (INTERCONNECT led_OBUF\[4\]_inst_i_1/O led_OBUF\[4\]_inst/I (543.7:572.2:572.2) (543.7:572.2:572.2))
+      (INTERCONNECT led_OBUF\[5\]_inst_i_1/O led_OBUF\[5\]_inst/I (543.7:572.2:572.2) (543.7:572.2:572.2))
+      (INTERCONNECT led_OBUF\[6\]_inst_i_1/O led_OBUF\[6\]_inst/I (543.7:572.2:572.2) (543.7:572.2:572.2))
+      (INTERCONNECT led_OBUF\[7\]_inst_i_1/O led_OBUF\[7\]_inst/I (543.7:572.2:572.2) (543.7:572.2:572.2))
+      (INTERCONNECT led_OBUF\[8\]_inst_i_1/O led_OBUF\[8\]_inst/I (543.7:572.2:572.2) (543.7:572.2:572.2))
+      (INTERCONNECT led_OBUF\[9\]_inst_i_1/O led_OBUF\[9\]_inst/I (543.7:572.2:572.2) (543.7:572.2:572.2))
+      (INTERCONNECT px_strobe_reg/Q px_strobe_OBUF_inst/I (637.7:690.2:690.2) (637.7:690.2:690.2))
+      (INTERCONNECT px_strobe_reg/Q led_OBUF\[0\]_inst_i_1/I0 (575.0:621.0:621.0) (575.0:621.0:621.0))
+      (INTERCONNECT px_strobe_reg/Q vga/h_sync\[9\]_i_1/I3 (639.7:689.0:689.0) (639.7:689.0:689.0))
+      (INTERCONNECT px_strobe_reg/Q vga/v_sync\[9\]_i_1/I5 (639.7:689.0:689.0) (639.7:689.0:689.0))
+      (INTERCONNECT sw_IBUF\[0\]_inst/O vgaRed_OBUF\[0\]_inst/I (2244.0:2362.0:2362.0) (2244.0:2362.0:2362.0))
+      (INTERCONNECT sw_IBUF\[0\]_inst/O led_OBUF\[0\]_inst_i_1/I2 (542.7:571.2:571.2) (542.7:571.2:571.2))
+      (INTERCONNECT sw_IBUF\[10\]_inst/O vgaGreen_OBUF\[2\]_inst/I (2638.2:2777.0:2777.0) (2638.2:2777.0:2777.0))
+      (INTERCONNECT sw_IBUF\[10\]_inst/O led_OBUF\[10\]_inst_i_1/I0 (542.7:571.2:571.2) (542.7:571.2:571.2))
+      (INTERCONNECT sw_IBUF\[11\]_inst/O vgaGreen_OBUF\[3\]_inst/I (2590.7:2727.0:2727.0) (2590.7:2727.0:2727.0))
+      (INTERCONNECT sw_IBUF\[11\]_inst/O led_OBUF\[11\]_inst_i_1/I0 (542.7:571.2:571.2) (542.7:571.2:571.2))
+      (INTERCONNECT sw_IBUF\[12\]_inst/O led_OBUF\[12\]_inst_i_1/I0 (542.7:571.2:571.2) (542.7:571.2:571.2))
+      (INTERCONNECT sw_IBUF\[13\]_inst/O led_OBUF\[13\]_inst_i_1/I0 (542.7:571.2:571.2) (542.7:571.2:571.2))
+      (INTERCONNECT sw_IBUF\[14\]_inst/O led_OBUF\[14\]_inst_i_1/I0 (542.7:571.2:571.2) (542.7:571.2:571.2))
+      (INTERCONNECT sw_IBUF\[15\]_inst/O led_OBUF\[15\]_inst_i_1/I0 (542.7:571.2:571.2) (542.7:571.2:571.2))
+      (INTERCONNECT sw_IBUF\[1\]_inst/O vgaRed_OBUF\[1\]_inst/I (2244.0:2362.0:2362.0) (2244.0:2362.0:2362.0))
+      (INTERCONNECT sw_IBUF\[1\]_inst/O led_OBUF\[1\]_inst_i_1/I0 (542.7:571.2:571.2) (542.7:571.2:571.2))
+      (INTERCONNECT sw_IBUF\[2\]_inst/O vgaRed_OBUF\[2\]_inst/I (2122.4:2234.0:2234.0) (2122.4:2234.0:2234.0))
+      (INTERCONNECT sw_IBUF\[2\]_inst/O led_OBUF\[2\]_inst_i_1/I0 (542.7:571.2:571.2) (542.7:571.2:571.2))
+      (INTERCONNECT sw_IBUF\[3\]_inst/O vgaRed_OBUF\[3\]_inst/I (1714.8:1805.0:1805.0) (1714.8:1805.0:1805.0))
+      (INTERCONNECT sw_IBUF\[3\]_inst/O led_OBUF\[3\]_inst_i_1/I0 (542.7:571.2:571.2) (542.7:571.2:571.2))
+      (INTERCONNECT sw_IBUF\[4\]_inst/O vgaBlue_OBUF\[0\]_inst/I (1796.5:1891.0:1891.0) (1796.5:1891.0:1891.0))
+      (INTERCONNECT sw_IBUF\[4\]_inst/O led_OBUF\[4\]_inst_i_1/I0 (542.7:571.2:571.2) (542.7:571.2:571.2))
+      (INTERCONNECT sw_IBUF\[5\]_inst/O vgaBlue_OBUF\[1\]_inst/I (2089.1:2199.0:2199.0) (2089.1:2199.0:2199.0))
+      (INTERCONNECT sw_IBUF\[5\]_inst/O led_OBUF\[5\]_inst_i_1/I0 (542.7:571.2:571.2) (542.7:571.2:571.2))
+      (INTERCONNECT sw_IBUF\[6\]_inst/O vgaBlue_OBUF\[2\]_inst/I (2190.8:2306.0:2306.0) (2190.8:2306.0:2306.0))
+      (INTERCONNECT sw_IBUF\[6\]_inst/O led_OBUF\[6\]_inst_i_1/I0 (542.7:571.2:571.2) (542.7:571.2:571.2))
+      (INTERCONNECT sw_IBUF\[7\]_inst/O vgaBlue_OBUF\[3\]_inst/I (2224.0:2341.0:2341.0) (2224.0:2341.0:2341.0))
+      (INTERCONNECT sw_IBUF\[7\]_inst/O led_OBUF\[7\]_inst_i_1/I0 (542.7:571.2:571.2) (542.7:571.2:571.2))
+      (INTERCONNECT sw_IBUF\[8\]_inst/O vgaGreen_OBUF\[0\]_inst/I (2604.0:2741.0:2741.0) (2604.0:2741.0:2741.0))
+      (INTERCONNECT sw_IBUF\[8\]_inst/O led_OBUF\[8\]_inst_i_1/I0 (542.7:571.2:571.2) (542.7:571.2:571.2))
+      (INTERCONNECT sw_IBUF\[9\]_inst/O vgaGreen_OBUF\[1\]_inst/I (2576.4:2712.0:2712.0) (2576.4:2712.0:2712.0))
+      (INTERCONNECT sw_IBUF\[9\]_inst/O led_OBUF\[9\]_inst_i_1/I0 (542.7:571.2:571.2) (542.7:571.2:571.2))
+      (INTERCONNECT vga/h_sync\[0\]_i_1/O vga/h_sync_reg\[0\]/D (64.0:80.0:80.0) (64.0:80.0:80.0))
+      (INTERCONNECT vga/h_sync\[1\]_i_1/O vga/h_sync_reg\[1\]/D (64.0:80.0:80.0) (64.0:80.0:80.0))
+      (INTERCONNECT vga/h_sync\[2\]_i_1/O vga/h_sync_reg\[2\]/D (64.0:80.0:80.0) (64.0:80.0:80.0))
+      (INTERCONNECT vga/h_sync\[3\]_i_1/O vga/h_sync_reg\[3\]/D (64.0:80.0:80.0) (64.0:80.0:80.0))
+      (INTERCONNECT vga/h_sync\[4\]_i_1/O vga/h_sync_reg\[4\]/D (64.0:80.0:80.0) (64.0:80.0:80.0))
+      (INTERCONNECT vga/h_sync\[4\]_i_2/O vga/h_sync\[4\]_i_1/I0 (485.5:511.0:511.0) (485.5:511.0:511.0))
+      (INTERCONNECT vga/h_sync\[5\]_i_1/O vga/h_sync_reg\[5\]/D (64.0:80.0:80.0) (64.0:80.0:80.0))
+      (INTERCONNECT vga/h_sync\[5\]_i_2/O vga/h_sync\[5\]_i_1/I0 (485.5:511.0:511.0) (485.5:511.0:511.0))
+      (INTERCONNECT vga/h_sync\[6\]_i_1/O vga/h_sync_reg\[6\]/D (64.0:80.0:80.0) (64.0:80.0:80.0))
+      (INTERCONNECT vga/h_sync\[7\]_i_1/O vga/h_sync_reg\[7\]/D (64.0:80.0:80.0) (64.0:80.0:80.0))
+      (INTERCONNECT vga/h_sync\[8\]_i_1/O vga/h_sync_reg\[8\]/D (64.0:80.0:80.0) (64.0:80.0:80.0))
+      (INTERCONNECT vga/h_sync\[8\]_i_2/O vga/h_sync\[8\]_i_1/I0 (439.9:463.0:463.0) (439.9:463.0:463.0))
+      (INTERCONNECT vga/h_sync\[9\]_i_1/O vga/h_sync_reg\[0\]/CE (409.2:451.0:451.0) (409.2:451.0:451.0))
+      (INTERCONNECT vga/h_sync\[9\]_i_1/O vga/h_sync_reg\[1\]/CE (409.2:451.0:451.0) (409.2:451.0:451.0))
+      (INTERCONNECT vga/h_sync\[9\]_i_1/O vga/h_sync_reg\[2\]/CE (409.2:451.0:451.0) (409.2:451.0:451.0))
+      (INTERCONNECT vga/h_sync\[9\]_i_1/O vga/h_sync_reg\[3\]/CE (409.2:451.0:451.0) (409.2:451.0:451.0))
+      (INTERCONNECT vga/h_sync\[9\]_i_1/O vga/h_sync_reg\[4\]/CE (409.2:451.0:451.0) (409.2:451.0:451.0))
+      (INTERCONNECT vga/h_sync\[9\]_i_1/O vga/h_sync_reg\[5\]/CE (409.2:451.0:451.0) (409.2:451.0:451.0))
+      (INTERCONNECT vga/h_sync\[9\]_i_1/O vga/h_sync_reg\[6\]/CE (409.2:451.0:451.0) (409.2:451.0:451.0))
+      (INTERCONNECT vga/h_sync\[9\]_i_1/O vga/h_sync_reg\[7\]/CE (409.2:451.0:451.0) (409.2:451.0:451.0))
+      (INTERCONNECT vga/h_sync\[9\]_i_1/O vga/h_sync_reg\[8\]/CE (409.2:451.0:451.0) (409.2:451.0:451.0))
+      (INTERCONNECT vga/h_sync\[9\]_i_1/O vga/h_sync_reg\[9\]/CE (409.2:451.0:451.0) (409.2:451.0:451.0))
+      (INTERCONNECT vga/h_sync\[9\]_i_2/O vga/h_sync_reg\[9\]/D (64.0:80.0:80.0) (64.0:80.0:80.0))
+      (INTERCONNECT vga/h_sync\[9\]_i_3/O vga/h_sync\[9\]_i_1/I0 (439.9:463.0:463.0) (439.9:463.0:463.0))
+      (INTERCONNECT vga/h_sync\[9\]_i_3/O vga/v_sync\[1\]_i_1/I0 (270.8:285.0:285.0) (270.8:285.0:285.0))
+      (INTERCONNECT vga/h_sync\[9\]_i_3/O vga/v_sync\[2\]_i_1/I0 (270.8:285.0:285.0) (270.8:285.0:285.0))
+      (INTERCONNECT vga/h_sync\[9\]_i_3/O vga/v_sync\[9\]_i_1/I0 (439.9:463.0:463.0) (439.9:463.0:463.0))
+      (INTERCONNECT vga/h_sync\[9\]_i_3/O vga/v_sync\[0\]_i_1/I2 (286.0:301.0:301.0) (286.0:301.0:301.0))
+      (INTERCONNECT vga/h_sync\[9\]_i_3/O vga/h_sync\[5\]_i_1/I3 (286.0:301.0:301.0) (286.0:301.0:301.0))
+      (INTERCONNECT vga/h_sync\[9\]_i_3/O vga/h_sync\[6\]_i_1/I3 (286.0:301.0:301.0) (286.0:301.0:301.0))
+      (INTERCONNECT vga/h_sync\[9\]_i_3/O vga/h_sync\[4\]_i_1/I4 (286.0:301.0:301.0) (286.0:301.0:301.0))
+      (INTERCONNECT vga/h_sync\[9\]_i_3/O vga/h_sync\[7\]_i_1/I4 (286.0:301.0:301.0) (286.0:301.0:301.0))
+      (INTERCONNECT vga/h_sync\[9\]_i_3/O vga/h_sync\[8\]_i_1/I4 (286.0:301.0:301.0) (286.0:301.0:301.0))
+      (INTERCONNECT vga/h_sync\[9\]_i_3/O vga/h_sync\[9\]_i_2/I4 (286.0:301.0:301.0) (286.0:301.0:301.0))
+      (INTERCONNECT vga/h_sync\[9\]_i_3/O vga/v_sync\[3\]_i_1/I4 (286.0:301.0:301.0) (286.0:301.0:301.0))
+      (INTERCONNECT vga/h_sync\[9\]_i_3/O vga/v_sync\[4\]_i_1/I4 (286.0:301.0:301.0) (286.0:301.0:301.0))
+      (INTERCONNECT vga/h_sync\[9\]_i_3/O vga/v_sync\[5\]_i_1/I4 (286.0:301.0:301.0) (286.0:301.0:301.0))
+      (INTERCONNECT vga/h_sync\[9\]_i_3/O vga/v_sync\[6\]_i_1/I4 (286.0:301.0:301.0) (286.0:301.0:301.0))
+      (INTERCONNECT vga/h_sync\[9\]_i_3/O vga/v_sync\[7\]_i_1/I4 (286.0:301.0:301.0) (286.0:301.0:301.0))
+      (INTERCONNECT vga/h_sync\[9\]_i_3/O vga/v_sync\[8\]_i_1/I4 (286.0:301.0:301.0) (286.0:301.0:301.0))
+      (INTERCONNECT vga/h_sync\[9\]_i_3/O vga/v_sync\[9\]_i_2/I4 (286.0:301.0:301.0) (286.0:301.0:301.0))
+      (INTERCONNECT vga/h_sync\[9\]_i_4/O vga/h_sync\[9\]_i_1/I1 (485.5:511.0:511.0) (485.5:511.0:511.0))
+      (INTERCONNECT vga/h_sync\[9\]_i_4/O vga/v_sync\[0\]_i_1/I1 (270.8:285.0:285.0) (270.8:285.0:285.0))
+      (INTERCONNECT vga/h_sync\[9\]_i_4/O vga/v_sync\[1\]_i_1/I1 (286.0:301.0:301.0) (286.0:301.0:301.0))
+      (INTERCONNECT vga/h_sync\[9\]_i_4/O vga/v_sync\[2\]_i_1/I1 (286.0:301.0:301.0) (286.0:301.0:301.0))
+      (INTERCONNECT vga/h_sync\[9\]_i_4/O vga/v_sync\[9\]_i_1/I1 (485.5:511.0:511.0) (485.5:511.0:511.0))
+      (INTERCONNECT vga/h_sync\[9\]_i_4/O vga/h_sync\[5\]_i_1/I2 (270.8:285.0:285.0) (270.8:285.0:285.0))
+      (INTERCONNECT vga/h_sync\[9\]_i_4/O vga/h_sync\[6\]_i_1/I2 (270.8:285.0:285.0) (270.8:285.0:285.0))
+      (INTERCONNECT vga/h_sync\[9\]_i_4/O vga/h_sync\[4\]_i_1/I3 (270.8:285.0:285.0) (270.8:285.0:285.0))
+      (INTERCONNECT vga/h_sync\[9\]_i_4/O vga/h_sync\[7\]_i_1/I3 (270.8:285.0:285.0) (270.8:285.0:285.0))
+      (INTERCONNECT vga/h_sync\[9\]_i_4/O vga/h_sync\[8\]_i_1/I3 (270.8:285.0:285.0) (270.8:285.0:285.0))
+      (INTERCONNECT vga/h_sync\[9\]_i_4/O vga/h_sync\[9\]_i_2/I3 (270.8:285.0:285.0) (270.8:285.0:285.0))
+      (INTERCONNECT vga/h_sync\[9\]_i_4/O vga/v_sync\[3\]_i_1/I3 (270.8:285.0:285.0) (270.8:285.0:285.0))
+      (INTERCONNECT vga/h_sync\[9\]_i_4/O vga/v_sync\[4\]_i_1/I3 (270.8:285.0:285.0) (270.8:285.0:285.0))
+      (INTERCONNECT vga/h_sync\[9\]_i_4/O vga/v_sync\[5\]_i_1/I3 (270.8:285.0:285.0) (270.8:285.0:285.0))
+      (INTERCONNECT vga/h_sync\[9\]_i_4/O vga/v_sync\[6\]_i_1/I3 (270.8:285.0:285.0) (270.8:285.0:285.0))
+      (INTERCONNECT vga/h_sync\[9\]_i_4/O vga/v_sync\[7\]_i_1/I3 (270.8:285.0:285.0) (270.8:285.0:285.0))
+      (INTERCONNECT vga/h_sync\[9\]_i_4/O vga/v_sync\[8\]_i_1/I3 (270.8:285.0:285.0) (270.8:285.0:285.0))
+      (INTERCONNECT vga/h_sync\[9\]_i_4/O vga/v_sync\[9\]_i_2/I3 (270.8:285.0:285.0) (270.8:285.0:285.0))
+      (INTERCONNECT vga/h_sync\[9\]_i_4/O vga/h_sync\[0\]_i_1/I4 (286.0:301.0:301.0) (286.0:301.0:301.0))
+      (INTERCONNECT vga/h_sync\[9\]_i_5/O vga/v_sync\[9\]_i_1/I3 (270.8:285.0:285.0) (270.8:285.0:285.0))
+      (INTERCONNECT vga/h_sync\[9\]_i_5/O vga/h_sync\[9\]_i_1/I4 (270.8:285.0:285.0) (270.8:285.0:285.0))
+      (INTERCONNECT vga/h_sync\[9\]_i_6/O vga/v_sync\[9\]_i_1/I4 (286.0:301.0:301.0) (286.0:301.0:301.0))
+      (INTERCONNECT vga/h_sync\[9\]_i_6/O vga/h_sync\[9\]_i_1/I5 (286.0:301.0:301.0) (286.0:301.0:301.0))
+      (INTERCONNECT vga/h_sync\[9\]_i_7/O vga/h_sync\[9\]_i_2/I0 (439.9:463.0:463.0) (439.9:463.0:463.0))
+      (INTERCONNECT vga/h_sync\[9\]_i_8/O vga/h_sync\[6\]_i_1/I0 (485.5:511.0:511.0) (485.5:511.0:511.0))
+      (INTERCONNECT vga/h_sync\[9\]_i_8/O vga/h_sync\[7\]_i_1/I0 (485.5:511.0:511.0) (485.5:511.0:511.0))
+      (INTERCONNECT vga/h_sync\[9\]_i_8/O vga/h_sync\[8\]_i_1/I1 (485.5:511.0:511.0) (485.5:511.0:511.0))
+      (INTERCONNECT vga/h_sync\[9\]_i_8/O vga/h_sync\[9\]_i_2/I1 (485.5:511.0:511.0) (485.5:511.0:511.0))
+      (INTERCONNECT vga/h_sync_reg\[0\]/Q vga/v_sync\[0\]_i_1/I0 (518.0:561.0:561.0) (518.0:561.0:561.0))
+      (INTERCONNECT vga/h_sync_reg\[0\]/Q vga/h_sync\[1\]_i_1/I1 (279.6:310.0:310.0) (279.6:310.0:310.0))
+      (INTERCONNECT vga/h_sync_reg\[0\]/Q vga/h_sync\[5\]_i_1/I1 (639.7:689.0:689.0) (639.7:689.0:689.0))
+      (INTERCONNECT vga/h_sync_reg\[0\]/Q vga/h_sync\[6\]_i_1/I1 (639.7:689.0:689.0) (639.7:689.0:689.0))
+      (INTERCONNECT vga/h_sync_reg\[0\]/Q vga/h_sync\[2\]_i_1/I2 (279.6:310.0:310.0) (279.6:310.0:310.0))
+      (INTERCONNECT vga/h_sync_reg\[0\]/Q vga/h_sync\[3\]_i_1/I2 (373.6:409.0:409.0) (373.6:409.0:409.0))
+      (INTERCONNECT vga/h_sync_reg\[0\]/Q vga/h_sync\[4\]_i_1/I2 (639.7:689.0:689.0) (639.7:689.0:689.0))
+      (INTERCONNECT vga/h_sync_reg\[0\]/Q vga/h_sync\[4\]_i_2/I2 (279.6:310.0:310.0) (279.6:310.0:310.0))
+      (INTERCONNECT vga/h_sync_reg\[0\]/Q vga/h_sync\[5\]_i_2/I2 (575.0:621.0:621.0) (575.0:621.0:621.0))
+      (INTERCONNECT vga/h_sync_reg\[0\]/Q vga/h_sync\[7\]_i_1/I2 (639.7:689.0:689.0) (639.7:689.0:689.0))
+      (INTERCONNECT vga/h_sync_reg\[0\]/Q vga/h_sync\[8\]_i_1/I2 (742.3:797.0:797.0) (742.3:797.0:797.0))
+      (INTERCONNECT vga/h_sync_reg\[0\]/Q vga/h_sync\[9\]_i_1/I2 (742.3:797.0:797.0) (742.3:797.0:797.0))
+      (INTERCONNECT vga/h_sync_reg\[0\]/Q vga/h_sync\[9\]_i_2/I2 (742.3:797.0:797.0) (742.3:797.0:797.0))
+      (INTERCONNECT vga/h_sync_reg\[0\]/Q vga/h_sync\[9\]_i_8/I2 (518.0:561.0:561.0) (518.0:561.0:561.0))
+      (INTERCONNECT vga/h_sync_reg\[0\]/Q vga/v_sync\[1\]_i_1/I2 (639.7:689.0:689.0) (639.7:689.0:689.0))
+      (INTERCONNECT vga/h_sync_reg\[0\]/Q vga/v_sync\[2\]_i_1/I2 (742.3:797.0:797.0) (742.3:797.0:797.0))
+      (INTERCONNECT vga/h_sync_reg\[0\]/Q vga/v_sync\[3\]_i_1/I2 (639.7:689.0:689.0) (639.7:689.0:689.0))
+      (INTERCONNECT vga/h_sync_reg\[0\]/Q vga/v_sync\[4\]_i_1/I2 (518.0:561.0:561.0) (518.0:561.0:561.0))
+      (INTERCONNECT vga/h_sync_reg\[0\]/Q vga/v_sync\[5\]_i_1/I2 (518.0:561.0:561.0) (518.0:561.0:561.0))
+      (INTERCONNECT vga/h_sync_reg\[0\]/Q vga/v_sync\[6\]_i_1/I2 (639.7:689.0:689.0) (639.7:689.0:689.0))
+      (INTERCONNECT vga/h_sync_reg\[0\]/Q vga/v_sync\[7\]_i_1/I2 (742.3:797.0:797.0) (742.3:797.0:797.0))
+      (INTERCONNECT vga/h_sync_reg\[0\]/Q vga/v_sync\[8\]_i_1/I2 (742.3:797.0:797.0) (742.3:797.0:797.0))
+      (INTERCONNECT vga/h_sync_reg\[0\]/Q vga/v_sync\[9\]_i_1/I2 (742.3:797.0:797.0) (742.3:797.0:797.0))
+      (INTERCONNECT vga/h_sync_reg\[0\]/Q vga/v_sync\[9\]_i_2/I2 (742.3:797.0:797.0) (742.3:797.0:797.0))
+      (INTERCONNECT vga/h_sync_reg\[0\]/Q vga/x_OBUF_inst_i_1/I4 (373.6:409.0:409.0) (373.6:409.0:409.0))
+      (INTERCONNECT vga/h_sync_reg\[0\]/Q vga/h_sync\[0\]_i_1/I5 (373.6:409.0:409.0) (373.6:409.0:409.0))
+      (INTERCONNECT vga/h_sync_reg\[1\]/Q vga/h_sync\[1\]_i_1/I0 (373.6:409.0:409.0) (373.6:409.0:409.0))
+      (INTERCONNECT vga/h_sync_reg\[1\]/Q vga/h_sync\[2\]_i_1/I1 (373.6:409.0:409.0) (373.6:409.0:409.0))
+      (INTERCONNECT vga/h_sync_reg\[1\]/Q vga/h_sync\[3\]_i_1/I1 (575.0:621.0:621.0) (575.0:621.0:621.0))
+      (INTERCONNECT vga/h_sync_reg\[1\]/Q vga/h_sync\[4\]_i_2/I1 (373.6:409.0:409.0) (373.6:409.0:409.0))
+      (INTERCONNECT vga/h_sync_reg\[1\]/Q vga/h_sync\[9\]_i_8/I1 (639.7:689.0:689.0) (639.7:689.0:689.0))
+      (INTERCONNECT vga/h_sync_reg\[1\]/Q vga/h_sync\[0\]_i_1/I2 (518.0:561.0:561.0) (518.0:561.0:561.0))
+      (INTERCONNECT vga/h_sync_reg\[1\]/Q vga/h_sync\[9\]_i_3/I2 (373.6:409.0:409.0) (373.6:409.0:409.0))
+      (INTERCONNECT vga/h_sync_reg\[1\]/Q vga/h_sync\[5\]_i_2/I3 (373.6:409.0:409.0) (373.6:409.0:409.0))
+      (INTERCONNECT vga/h_sync_reg\[2\]/Q vga/h_sync\[0\]_i_1/I0 (742.3:797.0:797.0) (742.3:797.0:797.0))
+      (INTERCONNECT vga/h_sync_reg\[2\]/Q vga/h_sync\[2\]_i_1/I0 (575.0:621.0:621.0) (575.0:621.0:621.0))
+      (INTERCONNECT vga/h_sync_reg\[2\]/Q vga/h_sync\[3\]_i_1/I0 (518.0:561.0:561.0) (518.0:561.0:561.0))
+      (INTERCONNECT vga/h_sync_reg\[2\]/Q vga/h_sync\[4\]_i_2/I0 (575.0:621.0:621.0) (575.0:621.0:621.0))
+      (INTERCONNECT vga/h_sync_reg\[2\]/Q vga/h_sync\[9\]_i_3/I0 (518.0:561.0:561.0) (518.0:561.0:561.0))
+      (INTERCONNECT vga/h_sync_reg\[2\]/Q vga/h_sync\[9\]_i_8/I0 (742.3:797.0:797.0) (742.3:797.0:797.0))
+      (INTERCONNECT vga/h_sync_reg\[2\]/Q vga/h_sync\[5\]_i_2/I4 (279.6:310.0:310.0) (279.6:310.0:310.0))
+      (INTERCONNECT vga/h_sync_reg\[3\]/Q vga/h_sync\[4\]_i_1/I1 (742.3:797.0:797.0) (742.3:797.0:797.0))
+      (INTERCONNECT vga/h_sync_reg\[3\]/Q vga/h_sync\[5\]_i_2/I1 (518.0:561.0:561.0) (518.0:561.0:561.0))
+      (INTERCONNECT vga/h_sync_reg\[3\]/Q vga/h_sync\[0\]_i_1/I3 (575.0:621.0:621.0) (575.0:621.0:621.0))
+      (INTERCONNECT vga/h_sync_reg\[3\]/Q vga/h_sync\[3\]_i_1/I3 (279.6:310.0:310.0) (279.6:310.0:310.0))
+      (INTERCONNECT vga/h_sync_reg\[3\]/Q vga/h_sync\[9\]_i_3/I3 (279.6:310.0:310.0) (279.6:310.0:310.0))
+      (INTERCONNECT vga/h_sync_reg\[3\]/Q vga/h_sync\[9\]_i_8/I3 (575.0:621.0:621.0) (575.0:621.0:621.0))
+      (INTERCONNECT vga/h_sync_reg\[4\]/Q vga/h_sync\[5\]_i_2/I0 (639.7:689.0:689.0) (639.7:689.0:689.0))
+      (INTERCONNECT vga/h_sync_reg\[4\]/Q vga/h_sync\[9\]_i_4/I4 (279.6:310.0:310.0) (279.6:310.0:310.0))
+      (INTERCONNECT vga/h_sync_reg\[4\]/Q vga/h_sync\[9\]_i_8/I4 (373.6:409.0:409.0) (373.6:409.0:409.0))
+      (INTERCONNECT vga/h_sync_reg\[4\]/Q vga/h_sync\[4\]_i_1/I5 (518.0:561.0:561.0) (518.0:561.0:561.0))
+      (INTERCONNECT vga/h_sync_reg\[5\]/Q vga/h_sync\[9\]_i_4/I1 (518.0:561.0:561.0) (518.0:561.0:561.0))
+      (INTERCONNECT vga/h_sync_reg\[5\]/Q vga/x_OBUF_inst_i_1/I3 (575.0:621.0:621.0) (575.0:621.0:621.0))
+      (INTERCONNECT vga/h_sync_reg\[5\]/Q vga/h_sync\[5\]_i_1/I4 (518.0:561.0:561.0) (518.0:561.0:561.0))
+      (INTERCONNECT vga/h_sync_reg\[5\]/Q vga/h_sync\[9\]_i_8/I5 (279.6:310.0:310.0) (279.6:310.0:310.0))
+      (INTERCONNECT vga/h_sync_reg\[6\]/Q vga/h_sync\[8\]_i_2/I0 (373.6:409.0:409.0) (373.6:409.0:409.0))
+      (INTERCONNECT vga/h_sync_reg\[6\]/Q vga/h_sync\[0\]_i_1/I1 (639.7:689.0:689.0) (639.7:689.0:689.0))
+      (INTERCONNECT vga/h_sync_reg\[6\]/Q vga/h_sync\[7\]_i_1/I1 (742.3:797.0:797.0) (742.3:797.0:797.0))
+      (INTERCONNECT vga/h_sync_reg\[6\]/Q vga/h_sync\[9\]_i_3/I1 (575.0:621.0:621.0) (575.0:621.0:621.0))
+      (INTERCONNECT vga/h_sync_reg\[6\]/Q vga/h_sync\[9\]_i_7/I2 (279.6:310.0:310.0) (279.6:310.0:310.0))
+      (INTERCONNECT vga/h_sync_reg\[6\]/Q vga/x_OBUF_inst_i_1/I2 (518.0:561.0:561.0) (518.0:561.0:561.0))
+      (INTERCONNECT vga/h_sync_reg\[6\]/Q vga/h_sync\[6\]_i_1/I4 (518.0:561.0:561.0) (518.0:561.0:561.0))
+      (INTERCONNECT vga/h_sync_reg\[7\]/Q vga/h_sync\[9\]_i_4/I0 (639.7:689.0:689.0) (639.7:689.0:689.0))
+      (INTERCONNECT vga/h_sync_reg\[7\]/Q vga/h_sync\[8\]_i_2/I1 (279.6:310.0:310.0) (279.6:310.0:310.0))
+      (INTERCONNECT vga/h_sync_reg\[7\]/Q vga/h_sync\[9\]_i_7/I1 (373.6:409.0:409.0) (373.6:409.0:409.0))
+      (INTERCONNECT vga/h_sync_reg\[7\]/Q vga/h_sync\[7\]_i_1/I5 (518.0:561.0:561.0) (518.0:561.0:561.0))
+      (INTERCONNECT vga/h_sync_reg\[7\]/Q vga/x_OBUF_inst_i_1/I5 (279.6:310.0:310.0) (279.6:310.0:310.0))
+      (INTERCONNECT vga/h_sync_reg\[8\]/Q vga/h_sync\[9\]_i_7/I0 (575.0:621.0:621.0) (575.0:621.0:621.0))
+      (INTERCONNECT vga/h_sync_reg\[8\]/Q vga/x_OBUF_inst_i_1/I0 (742.3:797.0:797.0) (742.3:797.0:797.0))
+      (INTERCONNECT vga/h_sync_reg\[8\]/Q vga/h_sync\[9\]_i_4/I2 (575.0:621.0:621.0) (575.0:621.0:621.0))
+      (INTERCONNECT vga/h_sync_reg\[8\]/Q vga/h_sync\[8\]_i_1/I5 (639.7:689.0:689.0) (639.7:689.0:689.0))
+      (INTERCONNECT vga/h_sync_reg\[9\]/Q vga/x_OBUF_inst_i_1/I1 (639.7:689.0:689.0) (639.7:689.0:689.0))
+      (INTERCONNECT vga/h_sync_reg\[9\]/Q vga/h_sync\[9\]_i_4/I3 (373.6:409.0:409.0) (373.6:409.0:409.0))
+      (INTERCONNECT vga/h_sync_reg\[9\]/Q vga/h_sync\[9\]_i_2/I5 (639.7:689.0:689.0) (639.7:689.0:689.0))
+      (INTERCONNECT vga/v_sync\[0\]_i_1/O vga/v_sync_reg\[0\]/D (64.0:80.0:80.0) (64.0:80.0:80.0))
+      (INTERCONNECT vga/v_sync\[1\]_i_1/O vga/v_sync_reg\[1\]/D (64.0:80.0:80.0) (64.0:80.0:80.0))
+      (INTERCONNECT vga/v_sync\[2\]_i_1/O vga/v_sync_reg\[2\]/D (64.0:80.0:80.0) (64.0:80.0:80.0))
+      (INTERCONNECT vga/v_sync\[3\]_i_1/O vga/v_sync_reg\[3\]/D (64.0:80.0:80.0) (64.0:80.0:80.0))
+      (INTERCONNECT vga/v_sync\[3\]_i_2/O vga/v_sync\[3\]_i_1/I0 (485.5:511.0:511.0) (485.5:511.0:511.0))
+      (INTERCONNECT vga/v_sync\[4\]_i_1/O vga/v_sync_reg\[4\]/D (64.0:80.0:80.0) (64.0:80.0:80.0))
+      (INTERCONNECT vga/v_sync\[4\]_i_2/O vga/v_sync\[4\]_i_1/I0 (485.5:511.0:511.0) (485.5:511.0:511.0))
+      (INTERCONNECT vga/v_sync\[5\]_i_1/O vga/v_sync_reg\[5\]/D (64.0:80.0:80.0) (64.0:80.0:80.0))
+      (INTERCONNECT vga/v_sync\[6\]_i_1/O vga/v_sync_reg\[6\]/D (64.0:80.0:80.0) (64.0:80.0:80.0))
+      (INTERCONNECT vga/v_sync\[7\]_i_1/O vga/v_sync_reg\[7\]/D (64.0:80.0:80.0) (64.0:80.0:80.0))
+      (INTERCONNECT vga/v_sync\[7\]_i_2/O vga/v_sync\[7\]_i_1/I0 (439.9:463.0:463.0) (439.9:463.0:463.0))
+      (INTERCONNECT vga/v_sync\[8\]_i_1/O vga/v_sync_reg\[8\]/D (64.0:80.0:80.0) (64.0:80.0:80.0))
+      (INTERCONNECT vga/v_sync\[8\]_i_2/O vga/v_sync\[8\]_i_1/I0 (439.9:463.0:463.0) (439.9:463.0:463.0))
+      (INTERCONNECT vga/v_sync\[9\]_i_1/O vga/v_sync_reg\[0\]/CE (409.2:451.0:451.0) (409.2:451.0:451.0))
+      (INTERCONNECT vga/v_sync\[9\]_i_1/O vga/v_sync_reg\[1\]/CE (409.2:451.0:451.0) (409.2:451.0:451.0))
+      (INTERCONNECT vga/v_sync\[9\]_i_1/O vga/v_sync_reg\[2\]/CE (409.2:451.0:451.0) (409.2:451.0:451.0))
+      (INTERCONNECT vga/v_sync\[9\]_i_1/O vga/v_sync_reg\[3\]/CE (409.2:451.0:451.0) (409.2:451.0:451.0))
+      (INTERCONNECT vga/v_sync\[9\]_i_1/O vga/v_sync_reg\[4\]/CE (409.2:451.0:451.0) (409.2:451.0:451.0))
+      (INTERCONNECT vga/v_sync\[9\]_i_1/O vga/v_sync_reg\[5\]/CE (409.2:451.0:451.0) (409.2:451.0:451.0))
+      (INTERCONNECT vga/v_sync\[9\]_i_1/O vga/v_sync_reg\[6\]/CE (409.2:451.0:451.0) (409.2:451.0:451.0))
+      (INTERCONNECT vga/v_sync\[9\]_i_1/O vga/v_sync_reg\[7\]/CE (409.2:451.0:451.0) (409.2:451.0:451.0))
+      (INTERCONNECT vga/v_sync\[9\]_i_1/O vga/v_sync_reg\[8\]/CE (409.2:451.0:451.0) (409.2:451.0:451.0))
+      (INTERCONNECT vga/v_sync\[9\]_i_1/O vga/v_sync_reg\[9\]/CE (409.2:451.0:451.0) (409.2:451.0:451.0))
+      (INTERCONNECT vga/v_sync\[9\]_i_2/O vga/v_sync_reg\[9\]/D (64.0:80.0:80.0) (64.0:80.0:80.0))
+      (INTERCONNECT vga/v_sync\[9\]_i_3/O vga/v_sync\[9\]_i_2/I0 (439.9:463.0:463.0) (439.9:463.0:463.0))
+      (INTERCONNECT vga/v_sync\[9\]_i_4/O vga/v_sync\[5\]_i_1/I0 (485.5:511.0:511.0) (485.5:511.0:511.0))
+      (INTERCONNECT vga/v_sync\[9\]_i_4/O vga/v_sync\[6\]_i_1/I0 (485.5:511.0:511.0) (485.5:511.0:511.0))
+      (INTERCONNECT vga/v_sync\[9\]_i_4/O vga/v_sync\[7\]_i_1/I1 (485.5:511.0:511.0) (485.5:511.0:511.0))
+      (INTERCONNECT vga/v_sync\[9\]_i_4/O vga/v_sync\[8\]_i_1/I1 (485.5:511.0:511.0) (485.5:511.0:511.0))
+      (INTERCONNECT vga/v_sync\[9\]_i_4/O vga/v_sync\[9\]_i_2/I1 (485.5:511.0:511.0) (485.5:511.0:511.0))
+      (INTERCONNECT vga/v_sync_reg\[0\]/Q vga/v_sync\[3\]_i_2/I0 (373.6:409.0:409.0) (373.6:409.0:409.0))
+      (INTERCONNECT vga/v_sync_reg\[0\]/Q vga/v_sync\[4\]_i_2/I1 (575.0:621.0:621.0) (575.0:621.0:621.0))
+      (INTERCONNECT vga/v_sync_reg\[0\]/Q vga/y_OBUF_inst_i_1/I1 (639.7:689.0:689.0) (639.7:689.0:689.0))
+      (INTERCONNECT vga/v_sync_reg\[0\]/Q vga/v_sync\[9\]_i_4/I2 (575.0:621.0:621.0) (575.0:621.0:621.0))
+      (INTERCONNECT vga/v_sync_reg\[0\]/Q vga/h_sync\[9\]_i_6/I3 (279.6:310.0:310.0) (279.6:310.0:310.0))
+      (INTERCONNECT vga/v_sync_reg\[0\]/Q vga/v_sync\[0\]_i_1/I3 (575.0:621.0:621.0) (575.0:621.0:621.0))
+      (INTERCONNECT vga/v_sync_reg\[0\]/Q vga/v_sync\[1\]_i_1/I3 (518.0:561.0:561.0) (518.0:561.0:561.0))
+      (INTERCONNECT vga/v_sync_reg\[0\]/Q vga/v_sync\[2\]_i_1/I5 (575.0:621.0:621.0) (575.0:621.0:621.0))
+      (INTERCONNECT vga/v_sync_reg\[1\]/Q vga/v_sync\[4\]_i_2/I0 (518.0:561.0:561.0) (518.0:561.0:561.0))
+      (INTERCONNECT vga/v_sync_reg\[1\]/Q vga/v_sync\[3\]_i_2/I1 (279.6:310.0:310.0) (279.6:310.0:310.0))
+      (INTERCONNECT vga/v_sync_reg\[1\]/Q vga/h_sync\[9\]_i_6/I2 (373.6:409.0:409.0) (373.6:409.0:409.0))
+      (INTERCONNECT vga/v_sync_reg\[1\]/Q vga/v_sync\[9\]_i_4/I3 (373.6:409.0:409.0) (373.6:409.0:409.0))
+      (INTERCONNECT vga/v_sync_reg\[1\]/Q vga/v_sync\[1\]_i_1/I4 (575.0:621.0:621.0) (575.0:621.0:621.0))
+      (INTERCONNECT vga/v_sync_reg\[1\]/Q vga/v_sync\[2\]_i_1/I4 (518.0:561.0:561.0) (518.0:561.0:561.0))
+      (INTERCONNECT vga/v_sync_reg\[2\]/Q vga/v_sync\[9\]_i_4/I0 (639.7:689.0:689.0) (639.7:689.0:689.0))
+      (INTERCONNECT vga/v_sync_reg\[2\]/Q vga/v_sync\[3\]_i_1/I1 (742.3:797.0:797.0) (742.3:797.0:797.0))
+      (INTERCONNECT vga/v_sync_reg\[2\]/Q vga/h_sync\[9\]_i_5/I2 (518.0:561.0:561.0) (518.0:561.0:561.0))
+      (INTERCONNECT vga/v_sync_reg\[2\]/Q vga/v_sync\[2\]_i_1/I3 (639.7:689.0:689.0) (639.7:689.0:689.0))
+      (INTERCONNECT vga/v_sync_reg\[2\]/Q vga/v_sync\[4\]_i_2/I3 (279.6:310.0:310.0) (279.6:310.0:310.0))
+      (INTERCONNECT vga/v_sync_reg\[3\]/Q vga/v_sync\[9\]_i_4/I1 (518.0:561.0:561.0) (518.0:561.0:561.0))
+      (INTERCONNECT vga/v_sync_reg\[3\]/Q vga/v_sync\[4\]_i_2/I2 (373.6:409.0:409.0) (373.6:409.0:409.0))
+      (INTERCONNECT vga/v_sync_reg\[3\]/Q vga/h_sync\[9\]_i_5/I3 (575.0:621.0:621.0) (575.0:621.0:621.0))
+      (INTERCONNECT vga/v_sync_reg\[3\]/Q vga/v_sync\[3\]_i_1/I5 (518.0:561.0:561.0) (518.0:561.0:561.0))
+      (INTERCONNECT vga/v_sync_reg\[4\]/Q vga/h_sync\[9\]_i_6/I1 (575.0:621.0:621.0) (575.0:621.0:621.0))
+      (INTERCONNECT vga/v_sync_reg\[4\]/Q vga/v_sync\[4\]_i_1/I1 (639.7:689.0:689.0) (639.7:689.0:689.0))
+      (INTERCONNECT vga/v_sync_reg\[4\]/Q vga/v_sync\[9\]_i_4/I4 (279.6:310.0:310.0) (279.6:310.0:310.0))
+      (INTERCONNECT vga/v_sync_reg\[5\]/Q vga/h_sync\[9\]_i_6/I0 (518.0:561.0:561.0) (518.0:561.0:561.0))
+      (INTERCONNECT vga/v_sync_reg\[5\]/Q vga/v_sync\[7\]_i_2/I0 (373.6:409.0:409.0) (373.6:409.0:409.0))
+      (INTERCONNECT vga/v_sync_reg\[5\]/Q vga/v_sync\[5\]_i_1/I1 (639.7:689.0:689.0) (639.7:689.0:689.0))
+      (INTERCONNECT vga/v_sync_reg\[5\]/Q vga/v_sync\[6\]_i_1/I1 (742.3:797.0:797.0) (742.3:797.0:797.0))
+      (INTERCONNECT vga/v_sync_reg\[5\]/Q vga/v_sync\[8\]_i_2/I1 (373.6:409.0:409.0) (373.6:409.0:409.0))
+      (INTERCONNECT vga/v_sync_reg\[5\]/Q vga/y_OBUF_inst_i_1/I2 (518.0:561.0:561.0) (518.0:561.0:561.0))
+      (INTERCONNECT vga/v_sync_reg\[5\]/Q vga/v_sync\[9\]_i_3/I3 (279.6:310.0:310.0) (279.6:310.0:310.0))
+      (INTERCONNECT vga/v_sync_reg\[6\]/Q vga/v_sync\[8\]_i_2/I0 (575.0:621.0:621.0) (575.0:621.0:621.0))
+      (INTERCONNECT vga/v_sync_reg\[6\]/Q vga/v_sync\[7\]_i_2/I1 (279.6:310.0:310.0) (279.6:310.0:310.0))
+      (INTERCONNECT vga/v_sync_reg\[6\]/Q vga/v_sync\[9\]_i_3/I2 (373.6:409.0:409.0) (373.6:409.0:409.0))
+      (INTERCONNECT vga/v_sync_reg\[6\]/Q vga/y_OBUF_inst_i_1/I3 (575.0:621.0:621.0) (575.0:621.0:621.0))
+      (INTERCONNECT vga/v_sync_reg\[6\]/Q vga/h_sync\[9\]_i_5/I5 (279.6:310.0:310.0) (279.6:310.0:310.0))
+      (INTERCONNECT vga/v_sync_reg\[6\]/Q vga/v_sync\[6\]_i_1/I5 (518.0:561.0:561.0) (518.0:561.0:561.0))
+      (INTERCONNECT vga/v_sync_reg\[7\]/Q vga/v_sync\[9\]_i_3/I1 (575.0:621.0:621.0) (575.0:621.0:621.0))
+      (INTERCONNECT vga/v_sync_reg\[7\]/Q vga/v_sync\[8\]_i_2/I2 (279.6:310.0:310.0) (279.6:310.0:310.0))
+      (INTERCONNECT vga/v_sync_reg\[7\]/Q vga/h_sync\[9\]_i_5/I4 (373.6:409.0:409.0) (373.6:409.0:409.0))
+      (INTERCONNECT vga/v_sync_reg\[7\]/Q vga/y_OBUF_inst_i_1/I4 (373.6:409.0:409.0) (373.6:409.0:409.0))
+      (INTERCONNECT vga/v_sync_reg\[7\]/Q vga/v_sync\[7\]_i_1/I5 (639.7:689.0:689.0) (639.7:689.0:689.0))
+      (INTERCONNECT vga/v_sync_reg\[8\]/Q vga/h_sync\[9\]_i_5/I0 (742.3:797.0:797.0) (742.3:797.0:797.0))
+      (INTERCONNECT vga/v_sync_reg\[8\]/Q vga/v_sync\[9\]_i_3/I0 (518.0:561.0:561.0) (518.0:561.0:561.0))
+      (INTERCONNECT vga/v_sync_reg\[8\]/Q vga/v_sync\[8\]_i_1/I5 (639.7:689.0:689.0) (639.7:689.0:689.0))
+      (INTERCONNECT vga/v_sync_reg\[8\]/Q vga/y_OBUF_inst_i_1/I5 (279.6:310.0:310.0) (279.6:310.0:310.0))
+      (INTERCONNECT vga/v_sync_reg\[9\]/Q vga/y_OBUF_inst_i_1/I0 (742.3:797.0:797.0) (742.3:797.0:797.0))
+      (INTERCONNECT vga/v_sync_reg\[9\]/Q vga/h_sync\[9\]_i_5/I1 (639.7:689.0:689.0) (639.7:689.0:689.0))
+      (INTERCONNECT vga/v_sync_reg\[9\]/Q vga/v_sync\[9\]_i_2/I5 (639.7:689.0:689.0) (639.7:689.0:689.0))
+      (INTERCONNECT vga/x_OBUF_inst_i_1/O x_OBUF_inst/I (543.7:572.2:572.2) (543.7:572.2:572.2))
+      (INTERCONNECT vga/y_OBUF_inst_i_1/O y_OBUF_inst/I (543.7:572.2:572.2) (543.7:572.2:572.2))
+      )
+    )
+)
+)

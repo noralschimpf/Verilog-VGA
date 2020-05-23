@@ -1,0 +1,8 @@
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/nathan/source/Xilinx/Verilog VGA/Verilog VGA.srcs/sources_1/new/top.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module top
+WARNING: [VRFC 10-1315] redeclaration of ansi port x is not allowed [/home/nathan/source/Xilinx/Verilog VGA/Verilog VGA.srcs/sources_1/new/top.v:39]
+WARNING: [VRFC 10-1315] redeclaration of ansi port y is not allowed [/home/nathan/source/Xilinx/Verilog VGA/Verilog VGA.srcs/sources_1/new/top.v:40]
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/nathan/source/Xilinx/Verilog VGA/Verilog VGA.srcs/sources_1/new/vga640x480.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module vga640x480
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/nathan/source/Xilinx/Verilog VGA/Verilog VGA.srcs/sim_1/new/top_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module top_tb
