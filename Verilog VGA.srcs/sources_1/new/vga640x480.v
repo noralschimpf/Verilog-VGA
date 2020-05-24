@@ -20,37 +20,51 @@
 //////////////////////////////////////////////////////////////////////////////////
 
 
-module vga640x480 (
-    input wire i_clk,
-    input wire i_px_strobe,
-    input wire i_rst,
-    
-    output wire o_hs,
-    output wire o_vs,
-    output wire o_blanking,
-    output wire o_active,
-    output wire o_screenend,
-    output wire o_animate,
-    
-    output wire [9:0] o_x,
-    output wire [8:0] o_y
+module vgaModular 
+    # ( 
+        parameter integer HTOTAL = 800,
+        parameter integer HFP = 16,
+        parameter integer HPULSE = 96,
+        parameter integer HBP = 48,
+        parameter integer HACTIVE = 640,
+        
+        parameter integer VTOTAL = 525,
+        parameter integer VFP = 10,
+        parameter integer VPULSE = 2,
+        parameter integer VBP = 33,
+        parameter integer VACTIVE = 480
+    )
+    (
+        input wire i_clk,
+        input wire i_px_strobe,
+        input wire i_rst,
+        
+        output wire o_hs,
+        output wire o_vs,
+        output wire o_blanking,
+        output wire o_active,
+        output wire o_screenend,
+        output wire o_animate,
+        
+        output wire [9:0] o_x,
+        output wire [8:0] o_y
     );
     
-    localparam HS_STRT = 16;
-    localparam HS_END = 16 + 96;
-    localparam HA_STRT = 16 + 96 + 48;
-    localparam VS_STRT = 480 + 10;
-    localparam VS_END = 480 + 10 + 2;
-    localparam VA_END = 480;
-    localparam ENDLINE = 800;
-    localparam ENDSCREEN = 525;
+    localparam HS_STRT = HFP;
+    localparam HS_END = HFP + HPULSE;
+    localparam HA_STRT = HFP + HPULSE + HBP;
+    localparam VS_STRT = VACTIVE + VFP;
+    localparam VS_END = VACTIVE + VFP + VPULSE;
+    localparam VA_END = VACTIVE;
+    localparam ENDLINE = HTOTAL;
+    localparam ENDSCREEN = VTOTAL;
     
     reg[9:0] v_sync;
     reg[9:0] h_sync; 
     
     //sync signals (active low in sync region)
-    assign o_hs = ~((h_sync>HS_STRT)|(h_sync<HS_END));
-    assign o_vs = ~((v_sync>VS_STRT)|(v_sync<VS_END));
+    assign o_hs = ~((h_sync>=HS_STRT)&(h_sync<HS_END));
+    assign o_vs = ~((v_sync>VS_STRT)&(v_sync<VS_END));
     
     //active pixel
    assign o_x = ((h_sync < HA_STRT) ? 0 : (h_sync - HA_STRT));
@@ -84,13 +98,13 @@ module vga640x480 (
         else if (i_px_strobe)
             begin
 
-                if (h_sync == ENDLINE)
+                if ((h_sync == ENDLINE-1) && (v_sync < ENDSCREEN-1))
                     begin
                         h_sync <= 0;
                         v_sync <= v_sync + 1;
                     end
                     
-                else if (v_sync == ENDSCREEN - 1)
+                else if (v_sync == ENDSCREEN-1)
                     begin
                         v_sync <= 0;
                     end

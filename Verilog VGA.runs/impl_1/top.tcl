@@ -69,12 +69,12 @@ set rc [catch {
   create_project -in_memory -part xc7a35tcpg236-3
   set_property design_mode GateLvl [current_fileset]
   set_param project.singleFileAddWarning.threshold 0
-  set_property webtalk.parent_dir {/home/nathan/source/Xilinx/Verilog VGA/Verilog VGA.cache/wt} [current_project]
-  set_property parent.project_path {/home/nathan/source/Xilinx/Verilog VGA/Verilog VGA.xpr} [current_project]
-  set_property ip_output_repo {{/home/nathan/source/Xilinx/Verilog VGA/Verilog VGA.cache/ip}} [current_project]
+  set_property webtalk.parent_dir {/home/nathan/sources/Xilinx-Projects/Verilog-VGA/Verilog VGA.cache/wt} [current_project]
+  set_property parent.project_path {/home/nathan/sources/Xilinx-Projects/Verilog-VGA/Verilog VGA.xpr} [current_project]
+  set_property ip_output_repo {{/home/nathan/sources/Xilinx-Projects/Verilog-VGA/Verilog VGA.cache/ip}} [current_project]
   set_property ip_cache_permissions {read write} [current_project]
-  add_files -quiet {{/home/nathan/source/Xilinx/Verilog VGA/Verilog VGA.runs/synth_1/top.dcp}}
-  read_xdc /home/nathan/source/Xilinx/digilent-xdc/Basys-3-Master.xdc
+  add_files -quiet {{/home/nathan/sources/Xilinx-Projects/Verilog-VGA/Verilog VGA.runs/synth_1/top.dcp}}
+  read_xdc /home/nathan/sources/Xilinx-Projects/digilent-xdc/Basys-3-Master.xdc
   link_design -top top -part xc7a35tcpg236-3
   close_msg_db -file init_design.pb
 } RESULT]
@@ -147,6 +147,24 @@ if {$rc} {
   return -code error $RESULT
 } else {
   end_step route_design
+  unset ACTIVE_STEP 
+}
+
+start_step write_bitstream
+set ACTIVE_STEP write_bitstream
+set rc [catch {
+  create_msg_db write_bitstream.pb
+  catch { write_mem_info -force top.mmi }
+  write_bitstream -force top.bit 
+  catch {write_debug_probes -quiet -force top}
+  catch {file copy -force top.ltx debug_nets.ltx}
+  close_msg_db -file write_bitstream.pb
+} RESULT]
+if {$rc} {
+  step_failed write_bitstream
+  return -code error $RESULT
+} else {
+  end_step write_bitstream
   unset ACTIVE_STEP 
 }
 

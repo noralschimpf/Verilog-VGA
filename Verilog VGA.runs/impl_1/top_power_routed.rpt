@@ -1,8 +1,8 @@
 Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
 -------------------------------------------------------------------------------------------------------------------------------
-| Tool Version     : Vivado v.2018.2 (lin64) Build 2258646 Thu Jun 14 20:02:38 MDT 2018
-| Date             : Tue May 12 22:50:42 2020
-| Host             : nathan-ThinkPad-P40-Yoga running 64-bit Ubuntu 18.04.4 LTS
+| Tool Version     : Vivado v.2018.3 (lin64) Build 2405991 Thu Dec  6 23:36:41 MST 2018
+| Date             : Sat May 23 23:38:54 2020
+| Host             : sdrov running 64-bit Ubuntu 18.04.4 LTS
 | Command          : report_power -file top_power_routed.rpt -pb top_power_summary_routed.pb -rpx top_power_routed.rpx
 | Design           : top
 | Device           : xc7a35tcpg236-3
@@ -33,7 +33,7 @@ Table of Contents
 | Total On-Chip Power (W)  | 0.084        |
 | Design Power Budget (W)  | Unspecified* |
 | Power Budget Margin (W)  | NA           |
-| Dynamic (W)              | 0.012        |
+| Dynamic (W)              | 0.013        |
 | Device Static (W)        | 0.072        |
 | Effective TJA (C/W)      | 5.0          |
 | Max Ambient (C)          | 99.6         |
@@ -53,11 +53,12 @@ Table of Contents
 | On-Chip        | Power (W) | Used     | Available | Utilization (%) |
 +----------------+-----------+----------+-----------+-----------------+
 | Clocks         |    <0.001 |        3 |       --- |             --- |
-| Slice Logic    |    <0.001 |       24 |       --- |             --- |
-|   LUT as Logic |    <0.001 |       10 |     20800 |            0.05 |
-|   Register     |    <0.001 |        3 |     41600 |           <0.01 |
+| Slice Logic    |    <0.001 |       98 |       --- |             --- |
+|   LUT as Logic |    <0.001 |       50 |     20800 |            0.24 |
+|   CARRY4       |    <0.001 |        1 |      8150 |            0.01 |
+|   Register     |    <0.001 |       24 |     41600 |            0.06 |
 |   Others       |     0.000 |        2 |       --- |             --- |
-| Signals        |    <0.001 |       36 |       --- |             --- |
+| Signals        |    <0.001 |       92 |       --- |             --- |
 | I/O            |     0.012 |       48 |       106 |           45.28 |
 | Static Power   |     0.072 |          |           |                 |
 | Total          |     0.084 |          |           |                 |
@@ -139,7 +140,7 @@ Table of Contents
 +------+-----------+
 | Name | Power (W) |
 +------+-----------+
-| top  |     0.012 |
+| top  |     0.013 |
 +------+-----------+
 
 
